@@ -108,3 +108,115 @@ I also have some experience building backend applications with Go (Golang). Alth
 আমি নতুন প্রযুক্তি শিখতে পছন্দ করি এবং বাস্তব প্রজেক্টের মাধ্যমে নিজের দক্ষতা বাড়ানোর চেষ্টা করি।
 
 এছাড়া Go (Golang) দিয়ে Backend নিয়ে কিছু কাজ করার অভিজ্ঞতাও আছে। যদিও সেটা বড় কোনো প্রজেক্ট ছিল না, কিন্তু এর মাধ্যমে আমি নতুন একটি Backend ভাষা সম্পর্কে শিখেছি এবং আমার প্রোগ্রামিং দক্ষতা আরও উন্নত হয়েছে।
+
+
+---
+
+# 5. Why do you want to join Bitbyte?
+### আপনি কেন Bitbyte-এ যোগ দিতে চান?
+
+### 🇬🇧 English
+
+From what I know, Bitbyte seems like a great place to learn and grow.
+
+As a fresher, I want to learn from experienced developers, work on real projects, and improve my skills.
+
+That's why I want to join Bitbyte.
+
+### 🇧🇩 বাংলা
+
+আমি যতটুকু জেনেছি, Bitbyte শেখা ও নিজেকে উন্নত করার জন্য একটি দারুণ জায়গা।
+
+একজন ফ্রেশার হিসেবে আমি অভিজ্ঞ ডেভেলপারদের কাছ থেকে শিখতে চাই, বাস্তব প্রজেক্টে কাজ করতে চাই এবং নিজের দক্ষতা আরও উন্নত করতে চাই।
+
+তাই আমি Bitbyte-এ যোগ দিতে চাই।
+
+---
+
+# 6. What are your career goals? / Where do you see yourself in 3–5 years?
+### আগামী ৩–৫ বছরে আপনি নিজেকে কোথায় দেখতে চান?
+
+### 🇬🇧 English
+
+In the next 3 to 5 years, I want to become a skilled full-stack software developer.
+
+I want to work on real-world projects, learn from experienced developers, and improve both my technical and problem-solving skills.
+
+I also want to take on more responsibility and become a valuable member of my team.
+
+### 🇧🇩 বাংলা
+
+আগামী ৩ থেকে ৫ বছরের মধ্যে আমি একজন দক্ষ ফুল-স্ট্যাক সফটওয়্যার ডেভেলপার হতে চাই।
+
+আমি বাস্তব প্রজেক্টে কাজ করতে চাই, অভিজ্ঞ ডেভেলপারদের কাছ থেকে শিখতে চাই এবং আমার টেকনিক্যাল ও সমস্যা সমাধানের দক্ষতা আরও উন্নত করতে চাই।
+
+পাশাপাশি আমি আরও দায়িত্ব নিতে চাই এবং টিমের একজন মূল্যবান সদস্য হতে চাই।
+
+---
+
+# 7. Tell me about a challenge you faced and how you solved it.
+### এমন একটি চ্যালেঞ্জ সম্পর্কে বলুন, যেটি আপনি কীভাবে সমাধান করেছেন।
+
+### 🇬🇧 English
+
+One challenge I faced was integrating Stripe payment into one of my projects.
+
+The payment wasn't working because of webhook and API configuration issues.
+
+I read the documentation, researched the problem, tested different solutions, and finally fixed it.
+
+This experience improved my debugging skills and taught me the importance of patience and continuous learning.
+
+### 🇧🇩 বাংলা
+
+আমার একটি প্রজেক্টে Stripe পেমেন্ট ইন্টিগ্রেট করার সময় একটি বড় চ্যালেঞ্জের মুখোমুখি হয়েছিলাম।
+
+Webhook এবং API configuration-এর সমস্যার কারণে পেমেন্ট সঠিকভাবে কাজ করছিল না।
+
+আমি ডকুমেন্টেশন পড়েছি, সমস্যাটি নিয়ে গবেষণা করেছি, বিভিন্ন সমাধান পরীক্ষা করেছি এবং শেষ পর্যন্ত সমস্যাটি সমাধান করেছি।
+
+এই অভিজ্ঞতা আমার ডিবাগিং দক্ষতা বাড়িয়েছে এবং আমাকে ধৈর্য ও নিয়মিত শেখার গুরুত্ব শিখিয়েছে।
+
+---
+
+# 8. How do you handle constructive feedback or criticism?
+### গঠনমূলক ফিডব্যাক বা সমালোচনা কীভাবে গ্রহণ করেন?
+
+### 🇬🇧 English
+
+I welcome constructive feedback because it helps me improve.
+
+I listen carefully, understand what I need to improve, and ask questions if needed.
+
+Then I apply the feedback to my work so I can avoid making the same mistake again.
+
+### 🇧🇩 বাংলা
+
+আমি গঠনমূলক ফিডব্যাককে স্বাগত জানাই, কারণ এটি আমাকে উন্নতি করতে সাহায্য করে।
+
+আমি মনোযোগ দিয়ে শুনি, কী উন্নতি করতে হবে তা বুঝি এবং প্রয়োজন হলে প্রশ্ন করি।
+
+এরপর আমি সেই ফিডব্যাক আমার কাজে প্রয়োগ করি, যাতে একই ভুল আবার না হয়।
+
+---
+
+# 9. How do you work in a team? / Tell me about your teamwork experience.
+### আপনি টিমে কীভাবে কাজ করেন? / আপনার টিমওয়ার্কের অভিজ্ঞতা সম্পর্কে বলুন।
+
+### 🇬🇧 English
+
+As a fresher, I don't have professional team experience yet.
+
+However, I'm a good listener, I communicate well, and I'm always willing to learn from others.
+
+I believe these qualities help me work well in a team.
+
+### 🇧🇩 বাংলা
+
+একজন ফ্রেশার হিসেবে আমার এখনো পেশাগত টিমে কাজ করার অভিজ্ঞতা নেই।
+
+তবে আমি অন্যদের কথা মনোযোগ দিয়ে শুনি, সবার সঙ্গে ভালোভাবে যোগাযোগ করি এবং সবসময় অন্যদের কাছ থেকে শেখার চেষ্টা করি।
+
+আমি বিশ্বাস করি, এই গুণগুলো আমাকে টিমে ভালোভাবে কাজ করতে সাহায্য করবে।
+
+---
