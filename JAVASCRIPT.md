@@ -3,18 +3,34 @@
 
 ---
 
-# Q1. What is the difference between `var`, `let`, and `const`?
-### বাংলা: `var`, `let`, এবং `const`-এর মধ্যে পার্থক্য কী?
+# 1. What is the difference between `var`, `let`, and `const`?
+### `var`, `let`, এবং `const`-এর মধ্যে পার্থক্য কী?
 
-## 🇬🇧 English Answer
+### 🇬🇧 English
 
-`var`, `let`, and `const` are all used to create variables in JavaScript.
+`var`, `let`, and `const` are all used to create variables in JavaScript, but they work differently.
 
-- **`var`** is the old way. It can be **redeclared** and **updated**, so it may cause bugs.
-- **`let`** can be **updated**, but it cannot be **redeclared** in the same block.
-- **`const`** cannot be **updated** or **redeclared**, so it is used for values that should not change.
+`var` is the old way to create variables. It can be redeclared and updated, which may cause unexpected bugs.
 
-### Example
+`let` is used when the value needs to change later. It can be updated, but it cannot be redeclared in the same block.
+
+`const` is used when the value should not change. It cannot be redeclared or updated.
+
+In my projects, I usually use `const` by default and `let` only when the value needs to change.
+
+### 🇧🇩 বাংলা
+
+`var`, `let`, এবং `const`—তিনটিই JavaScript-এ variable তৈরি করার জন্য ব্যবহার করা হয়, তবে এদের কাজের মধ্যে পার্থক্য রয়েছে।
+
+`var` হলো পুরোনো পদ্ধতি। এটি একই নামে আবার লেখা যায় এবং মান পরিবর্তন করা যায়, তাই অনেক সময় অপ্রত্যাশিত bug হতে পারে।
+
+`let` ব্যবহার করা হয় যখন পরে variable-এর মান পরিবর্তন করার প্রয়োজন হয়। এটি update করা যায়, কিন্তু একই block-এ আবার declare করা যায় না।
+
+`const` ব্যবহার করা হয় যখন variable-এর মান পরিবর্তন করার দরকার নেই। এটি update বা redeclare—কোনোটাই করা যায় না।
+
+আমি সাধারণত `const` ব্যবহার করি, আর যদি মান পরিবর্তন করতে হয় তাহলে `let` ব্যবহার করি।
+
+### 💻 Example
 
 ```javascript
 var name = "Opi";
@@ -27,34 +43,32 @@ const country = "Bangladesh";
 country = "India"; // ❌ Error
 ```
 
-**In my projects, I use `const` by default and `let` when the value needs to change.**
-
 ---
 
-## 🇧🇩 বাংলা উত্তর
+# 2. Explain the concept of Hoisting in JavaScript.
+### JavaScript-এ Hoisting কী?
 
-`var`, `let`, এবং `const`—তিনটিই JavaScript-এ variable তৈরি করার জন্য ব্যবহার করা হয়।
+### 🇬🇧 English
 
-- **`var`** হলো পুরোনো পদ্ধতি। এটি আবার লেখা (redeclare) এবং মান পরিবর্তন (update) করা যায়।
-- **`let`**-এর মান পরিবর্তন করা যায়, কিন্তু একই block-এ আবার লেখা যায় না।
-- **`const`**-এর মান পরিবর্তন বা আবার লেখা যায় না। তাই যেসব value পরিবর্তন হবে না, সেখানে `const` ব্যবহার করা হয়।
+Hoisting means JavaScript knows about variables and functions before running the code.
 
-**আমি সাধারণত `const` ব্যবহার করি, আর value পরিবর্তন করতে হলে `let` ব্যবহার করি।**
+With `var`, if we use a variable before declaring it, JavaScript returns `undefined`.
 
----
+With `let` and `const`, if we use them before declaring them, JavaScript gives a `ReferenceError`.
 
-# Q2. Explain the concept of Hoisting in JavaScript.
-### বাংলা: Hoisting কী?
+That is why I always declare my variables before using them.
 
-## 🇬🇧 English Answer
+### 🇧🇩 বাংলা
 
-Hoisting means JavaScript knows about **variables and functions before running the code**.
+Hoisting মানে JavaScript কোড চালানোর আগে variable এবং function-এর declaration আগে দেখে নেয়।
 
-With **`var`**, using a variable before declaring it returns **`undefined`**.
+`var`-এর ক্ষেত্রে declare করার আগে ব্যবহার করলে `undefined` পাওয়া যায়।
 
-With **`let`** and **`const`**, using them before declaring them gives a **ReferenceError**.
+কিন্তু `let` এবং `const` declare করার আগে ব্যবহার করলে `ReferenceError` আসে।
 
-### Example
+তাই আমি সব সময় variable আগে declare করি, তারপর ব্যবহার করি।
+
+### 💻 Example
 
 ```javascript
 console.log(name); // undefined
@@ -64,153 +78,4 @@ console.log(age); // ReferenceError
 let age = 18;
 ```
 
-**I always declare my variables before using them to avoid errors.**
-
 ---
-
-## 🇧🇩 বাংলা উত্তর
-
-Hoisting মানে JavaScript **কোড চালানোর আগে variable এবং function-এর declaration আগে দেখে নেয়।**
-
-- **`var`** আগে ব্যবহার করলে `undefined` পাওয়া যায়।
-- **`let`** এবং **`const`** আগে ব্যবহার করলে `ReferenceError` আসে।
-
-**তাই আমি সব সময় variable আগে declare করি, তারপর ব্যবহার করি।**
-
----
-
-# Q3. What are the primitive data types in JavaScript?
-### বাংলা: JavaScript-এর Primitive Data Types কী কী?
-
-## 🇬🇧 English Answer
-
-Primitive data types are the basic data types in JavaScript.
-
-There are **7 primitive data types**:
-
-1. String
-2. Number
-3. Boolean
-4. Undefined
-5. Null
-6. Symbol
-7. BigInt
-
-**In my projects, I mostly use String, Number, Boolean, Undefined, and Null.**
-
----
-
-## 🇧🇩 বাংলা উত্তর
-
-Primitive Data Types হলো JavaScript-এর **মৌলিক বা বেসিক data type**।
-
-JavaScript-এ **৭টি Primitive Data Type** আছে।
-
-1. String
-2. Number
-3. Boolean
-4. Undefined
-5. Null
-6. Symbol
-7. BigInt
-
-**আমার প্রজেক্টে আমি সবচেয়ে বেশি String, Number, Boolean, Undefined এবং Null ব্যবহার করি।**
-
----
-
-# Q4. What is the difference between `==` and `===`?
-### বাংলা: `==` এবং `===`-এর মধ্যে পার্থক্য কী?
-
-## 🇬🇧 English Answer
-
-Both **`==`** and **`===`** are used to compare two values.
-
-- **`==`** compares only the values. If the data types are different, JavaScript changes the data type before comparing.
-- **`===`** compares both the value and the data type. It does not change the data type.
-
-### Example
-
-```javascript
-5 == "5"   // true
-5 === "5"  // false
-```
-
-I always use **`===`** because it gives more accurate results.
-
----
-
-## 🇧🇩 বাংলা উত্তর
-
-`==` এবং `===`—দুটিই value তুলনা করার জন্য ব্যবহার করা হয়।
-
-- **`==`** শুধু value তুলনা করে। Data type আলাদা হলে JavaScript আগে data type পরিবর্তন করে।
-- **`===`** value এবং data type—দুটিই তুলনা করে। এটি data type পরিবর্তন করে না।
-
-### উদাহরণ
-
-```javascript
-5 == "5"   // true
-5 === "5"  // false
-```
-
-**আমি সব সময় `===` ব্যবহার করি, কারণ এটি বেশি সঠিক ফলাফল দেয়।**
-
----
-
-# Q5. Explain how closures work in JavaScript with an example.
-### বাংলা: Closure কী? উদাহরণসহ ব্যাখ্যা করুন।
-
-## 🇬🇧 English Answer
-
-A **closure** is when an **inner function** can use the variables of its **outer function**, even after the outer function has finished.
-
-### Example
-
-```javascript
-function outer() {
-  let name = "Opi";
-
-  function inner() {
-    console.log(name);
-  }
-
-  return inner;
-}
-
-const showName = outer();
-showName(); // Opi
-```
-
-Here, the `inner()` function remembers the `name` variable even after `outer()` has finished. This is called a **closure**.
-
-**Closures are useful for remembering values and keeping data private.**
-
----
-
-## 🇧🇩 বাংলা উত্তর
-
-**Closure** হলো এমন একটি feature, যেখানে **inner function**, **outer function** শেষ হওয়ার পরও তার variable ব্যবহার করতে পারে।
-
-### উদাহরণ
-
-```javascript
-function outer() {
-  let name = "Opi";
-
-  function inner() {
-    console.log(name);
-  }
-
-  return inner;
-}
-
-const showName = outer();
-showName(); // Opi
-```
-
-এখানে `inner()` function, `outer()` শেষ হওয়ার পরও `name` variable ব্যবহার করতে পারছে। এটাকেই **Closure** বলা হয়।
-
-**Closure সাধারণত value মনে রাখা এবং private data তৈরি করার জন্য ব্যবহার করা হয়।**
-
----
-
