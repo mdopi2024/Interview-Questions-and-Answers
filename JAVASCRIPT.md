@@ -533,3 +533,94 @@ console.log(typeof function(){}); // "function"
 
 > **💡 Interview Tip:**  
 > `typeof null` returns **`"object"`**. This is a well-known JavaScript behavior and is a very common interview follow-up question.
+
+---
+# 14. Explain Type Coercion in JavaScript with examples.
+### JavaScript-এ Type Coercion কী? উদাহরণসহ ব্যাখ্যা করুন।
+
+### 🇬🇧 English
+
+Type coercion means JavaScript **automatically changes one data type into another** when needed.
+
+This usually happens when we use operators like `+`, `-`, or `==`.
+
+For example, if we add a string and a number, JavaScript converts the number into a string.
+
+If we subtract a string and a number, JavaScript converts the string into a number.
+
+To avoid unexpected results, I prefer using `===` instead of `==`.
+
+### 🇧🇩 বাংলা
+
+Type Coercion মানে JavaScript **প্রয়োজন হলে নিজে থেকেই একটি data type-কে অন্য data type-এ পরিবর্তন করে।**
+
+এটি সাধারণত `+`, `-` অথবা `==` operator ব্যবহার করার সময় ঘটে।
+
+যদি string এবং number যোগ করা হয়, তাহলে JavaScript number-কে string-এ পরিবর্তন করে।
+
+আর যদি বিয়োগ করা হয়, তাহলে JavaScript string-কে number-এ পরিবর্তন করে।
+
+অপ্রত্যাশিত ফলাফল এড়াতে আমি সাধারণত `===` ব্যবহার করি।
+
+### 💻 Example
+
+```javascript
+console.log("5" + 2); // "52"
+
+console.log("5" - 2); // 3
+
+console.log(5 == "5"); // true
+
+console.log(5 === "5"); // false
+```
+
+---
+
+# 15. What is an Immediately Invoked Function Expression (IIFE)?
+### Immediately Invoked Function Expression (IIFE) কী?
+
+### 🇬🇧 English
+
+An **Immediately Invoked Function Expression (IIFE)** is a function that **runs immediately after it is created**.
+
+We do not need to call it separately because it executes automatically.
+
+IIFEs are useful when we want to run some code only once and avoid creating unnecessary global variables.
+
+### 🇧🇩 বাংলা
+
+**Immediately Invoked Function Expression (IIFE)** হলো এমন একটি function, যা **তৈরি হওয়ার সঙ্গে সঙ্গেই execute হয়।**
+
+এটিকে আলাদা করে call করতে হয় না, কারণ এটি নিজে থেকেই execute হয়।
+
+IIFE সাধারণত একবার কোনো কাজ করার জন্য এবং global scope-এ অপ্রয়োজনীয় variable তৈরি না করার জন্য ব্যবহার করা হয়।
+
+### 💻 Example
+
+```javascript
+(function () {
+  console.log("Hello, World!");
+})();
+```
+
+---
+
+# 🎯 JavaScript Interview Quick Revision
+
+| No. | Question | Short Answer |
+|------|----------|--------------|
+| **1** | Difference between `var`, `let`, and `const` | `var` is old, `let` can change, `const` cannot change. |
+| **2** | Hoisting | JavaScript knows about variables and functions before running the code. |
+| **3** | Primitive Data Types | String, Number, Boolean, Undefined, Null, Symbol, BigInt. |
+| **4** | `==` vs `===` | `==` compares value only, `===` compares value and data type. |
+| **5** | Closure | An inner function can use the outer function's variables after the outer function finishes. |
+| **6** | `null` vs `undefined` | `undefined` means no value yet, `null` means empty value on purpose. |
+| **7** | Arrow Function | A shorter way to write functions. |
+| **8** | Scope Chain | JavaScript looks for variables from the current scope to the outer scope. |
+| **9** | Temporal Dead Zone | Using `let` or `const` before declaration causes a `ReferenceError`. |
+| **10** | Pure Function | Same input always gives the same output and doesn't change outside data. |
+| **11** | Function Declaration vs Expression | Declaration is hoisted, Expression is not fully hoisted. |
+| **12** | Default Parameters | Provide a default value if no argument is passed. |
+| **13** | `typeof` Operator | Used to check the data type of a value or variable. |
+| **14** | Type Coercion | JavaScript automatically converts one data type into another. |
+| **15** | IIFE | A function that runs immediately after it is created. |
