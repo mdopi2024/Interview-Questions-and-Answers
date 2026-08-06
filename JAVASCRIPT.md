@@ -438,3 +438,98 @@ const sayHello = function () {
 
 sayHello();
 ```
+---
+# 12. What are Default Parameters in JavaScript?
+### JavaScript-এ Default Parameters কী?
+
+### 🇬🇧 English
+
+Default parameters allow us to set a **default value** for a function parameter.
+
+If we do not pass a value when calling the function, JavaScript automatically uses the default value.
+
+Default parameters help us avoid `undefined` values and make the code cleaner.
+
+### 🇧🇩 বাংলা
+
+Default Parameters ব্যবহার করে আমরা function-এর parameter-এর জন্য একটি **default value** দিতে পারি।
+
+যদি function call করার সময় কোনো value না দিই, তাহলে JavaScript সেই **default value** ব্যবহার করে।
+
+এটি `undefined` এড়াতে সাহায্য করে এবং কোডকে আরও পরিষ্কার করে।
+
+### 💻 Example
+
+```javascript
+function greet(name = "Guest") {
+  return `Hello, ${name}`;
+}
+
+console.log(greet());      // Hello, Guest
+console.log(greet("Opi")); // Hello, Opi
+```
+
+Here, if no value is passed, JavaScript uses `"Guest"` as the default value.
+
+এখানে যদি কোনো value না দেওয়া হয়, তাহলে JavaScript `"Guest"`-কে default value হিসেবে ব্যবহার করে।
+
+---
+
+# 13. What is the `typeof` operator and what are its possible return values?
+### `typeof` Operator কী এবং এটি কী কী return করতে পারে?
+
+### 🇬🇧 English
+
+The `typeof` operator is used to check the **data type** of a value or variable.
+
+It returns the data type as a string.
+
+The most common return values are:
+
+- `"string"`
+- `"number"`
+- `"boolean"`
+- `"undefined"`
+- `"object"`
+- `"function"`
+- `"symbol"`
+- `"bigint"`
+
+I use `typeof` in my projects to check the data type before working with a value.
+
+### 🇧🇩 বাংলা
+
+`typeof` operator ব্যবহার করা হয় কোনো **value বা variable-এর data type** জানার জন্য।
+
+এটি data type-কে **string** আকারে return করে।
+
+সবচেয়ে বেশি ব্যবহৃত return values হলো:
+
+- `"string"`
+- `"number"`
+- `"boolean"`
+- `"undefined"`
+- `"object"`
+- `"function"`
+- `"symbol"`
+- `"bigint"`
+
+আমি আমার প্রজেক্টে কোনো value-এর data type যাচাই করার জন্য `typeof` ব্যবহার করি।
+
+### 💻 Example
+
+```javascript
+console.log(typeof "Hello");      // "string"
+console.log(typeof 10);           // "number"
+console.log(typeof true);         // "boolean"
+console.log(typeof undefined);    // "undefined"
+console.log(typeof null);         // "object"
+console.log(typeof Symbol());     // "symbol"
+console.log(typeof 10n);          // "bigint"
+console.log(typeof {});           // "object"
+console.log(typeof []);           // "object"
+console.log(typeof function(){}); // "function"
+```
+
+> **💡 Interview Tip:**  
+> `typeof null` returns **`"object"`**. This is a well-known JavaScript behavior and is a very common interview follow-up question.
