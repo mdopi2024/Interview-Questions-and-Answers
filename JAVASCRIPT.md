@@ -182,3 +182,145 @@ function outer() {
 const showName = outer();
 showName(); // Opi
 ```
+---
+# 6. What is the difference between `null` and `undefined`?
+### `null` এবং `undefined`-এর মধ্যে পার্থক্য কী?
+
+### 🇬🇧 English
+
+Both `null` and `undefined` mean there is no value, but they are different.
+
+- `undefined` means a variable has been declared, but no value has been assigned yet.
+- `null` means we intentionally set the value to empty.
+
+In simple words:
+
+- **`undefined` = No value yet.**
+- **`null` = Empty value on purpose.**
+
+### 🇧🇩 বাংলা
+
+`null` এবং `undefined`—দুটিরই অর্থ হলো কোনো value নেই, কিন্তু এদের মধ্যে পার্থক্য আছে।
+
+- `undefined` মানে variable তৈরি করা হয়েছে, কিন্তু এখনো কোনো value দেওয়া হয়নি।
+- `null` মানে আমরা ইচ্ছা করে variable-এর value খালি রেখেছি।
+
+সহজভাবে,
+
+- **`undefined` = এখনো কোনো value নেই।**
+- **`null` = ইচ্ছা করে খালি value রাখা হয়েছে।**
+
+### 💻 Example
+
+```javascript
+let name;
+console.log(name); // undefined
+
+let age = null;
+console.log(age); // null
+```
+
+---
+
+# 7. What are Arrow Functions and how do they differ from Regular Functions?
+### Arrow Function কী এবং এটি Regular Function থেকে কীভাবে আলাদা?
+
+### 🇬🇧 English
+
+Arrow functions are a shorter way to write functions in JavaScript.
+
+The main difference is the syntax.
+
+A regular function is written like this:
+
+```javascript
+function greet() {
+  console.log("Hello");
+}
+```
+
+An arrow function is written like this:
+
+```javascript
+const greet = () => {
+  console.log("Hello");
+};
+```
+
+Both functions do the same job, but arrow functions use less code.
+
+In my React projects, I mostly use arrow functions because they are shorter and easier to read.
+
+### 🇧🇩 বাংলা
+
+Arrow Function হলো JavaScript-এ function লেখার একটি ছোট এবং সহজ উপায়।
+
+মূল পার্থক্য হলো লেখার পদ্ধতিতে (syntax)।
+
+Regular Function:
+
+```javascript
+function greet() {
+  console.log("Hello");
+}
+```
+
+Arrow Function:
+
+```javascript
+const greet = () => {
+  console.log("Hello");
+};
+```
+
+দুটিই একই কাজ করে, কিন্তু Arrow Function-এ কম কোড লিখতে হয়।
+
+আমি আমার React প্রজেক্টে বেশিরভাগ সময় Arrow Function ব্যবহার করি, কারণ এটি ছোট এবং পড়তে সহজ।
+
+---
+
+# 8. What is the Scope Chain in JavaScript?
+### JavaScript-এ Scope Chain কী?
+
+### 🇬🇧 English
+
+The scope chain is the way JavaScript looks for a variable.
+
+First, JavaScript checks the current scope.
+
+If it cannot find the variable, it looks in the outer scope.
+
+It keeps searching until it finds the variable or reaches the global scope.
+
+### 🇧🇩 বাংলা
+
+Scope Chain হলো JavaScript-এর variable খোঁজার প্রক্রিয়া।
+
+প্রথমে JavaScript current scope-এ variable খোঁজে।
+
+যদি সেখানে না পায়, তাহলে outer scope-এ খোঁজে।
+
+এভাবে variable পাওয়া পর্যন্ত বা global scope-এ পৌঁছানো পর্যন্ত খুঁজতে থাকে।
+
+### 💻 Example
+
+```javascript
+let name = "Opi";
+
+function outer() {
+  let age = 18;
+
+  function inner() {
+    console.log(name);
+    console.log(age);
+  }
+
+  inner();
+}
+
+outer();
+```
+
+Here, `inner()` cannot find `name` or `age` inside its own scope, so JavaScript looks in the outer scope. This process is called the **Scope Chain**.
+
+এখানে `inner()` function নিজের scope-এ `name` বা `age` পায় না। তাই JavaScript বাইরের scope-এ খুঁজে পায়। এই প্রক্রিয়াকেই **Scope Chain** বলা হয়।
