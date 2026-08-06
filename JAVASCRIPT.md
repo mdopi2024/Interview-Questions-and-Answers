@@ -324,3 +324,117 @@ outer();
 Here, `inner()` cannot find `name` or `age` inside its own scope, so JavaScript looks in the outer scope. This process is called the **Scope Chain**.
 
 এখানে `inner()` function নিজের scope-এ `name` বা `age` পায় না। তাই JavaScript বাইরের scope-এ খুঁজে পায়। এই প্রক্রিয়াকেই **Scope Chain** বলা হয়।
+---
+# 9. Explain the concept of the Temporal Dead Zone (TDZ).
+### Temporal Dead Zone (TDZ) কী?
+
+### 🇬🇧 English
+
+The **Temporal Dead Zone (TDZ)** is the time before a `let` or `const` variable is declared.
+
+If we try to use the variable before its declaration, JavaScript throws a **ReferenceError**.
+
+This happens because `let` and `const` are hoisted, but they cannot be used until the declaration line is reached.
+
+That is why I always declare `let` and `const` variables before using them.
+
+### 🇧🇩 বাংলা
+
+**Temporal Dead Zone (TDZ)** হলো `let` বা `const` variable declare করার আগের সময়।
+
+এই সময়ে যদি আমরা variable ব্যবহার করি, তাহলে JavaScript **ReferenceError** দেয়।
+
+এটি হয় কারণ `let` এবং `const` hoist হয়, কিন্তু declaration লাইনে পৌঁছানোর আগে ব্যবহার করা যায় না।
+
+তাই আমি সব সময় `let` এবং `const` variable আগে declare করি, তারপর ব্যবহার করি।
+
+### 💻 Example
+
+```javascript
+console.log(name); // ReferenceError
+
+let name = "Opi";
+```
+
+---
+
+# 10. What is a Pure Function? Give an example.
+### Pure Function কী? একটি উদাহরণ দিন।
+
+### 🇬🇧 English
+
+A **pure function** is a function that always returns the same output for the same input.
+
+It also does not change any outside variables or data.
+
+Pure functions are easy to understand, test, and reuse.
+
+### 🇧🇩 বাংলা
+
+**Pure Function** হলো এমন একটি function, যা একই input দিলে সব সময় একই output দেয়।
+
+এছাড়া, এটি বাইরের কোনো variable বা data পরিবর্তন করে না।
+
+Pure Function বুঝতে সহজ, test করা সহজ এবং আবার ব্যবহার করা সহজ।
+
+### 💻 Example
+
+```javascript
+function add(a, b) {
+  return a + b;
+}
+
+console.log(add(2, 3)); // 5
+console.log(add(2, 3)); // 5
+```
+
+Here, every time we pass `2` and `3`, the function returns `5`. So, it is a **Pure Function**.
+
+এখানে প্রতিবার `2` এবং `3` দিলে function `5` return করে। তাই এটি একটি **Pure Function**।
+
+---
+
+# 11. What is the difference between Function Declaration and Function Expression?
+### Function Declaration এবং Function Expression-এর মধ্যে পার্থক্য কী?
+
+### 🇬🇧 English
+
+Both Function Declaration and Function Expression are used to create functions.
+
+A **Function Declaration** starts with the `function` keyword and is **hoisted**, so it can be called before it is declared.
+
+A **Function Expression** stores a function inside a variable. It is **not fully hoisted**, so it cannot be called before its declaration.
+
+In my projects, I mostly use **Function Expressions with Arrow Functions** because they are cleaner and commonly used in React.
+
+### 🇧🇩 বাংলা
+
+Function Declaration এবং Function Expression—দুটিই function তৈরি করার জন্য ব্যবহার করা হয়।
+
+**Function Declaration** `function` keyword দিয়ে শুরু হয় এবং এটি **hoisted** হয়। তাই declare করার আগেও call করা যায়।
+
+**Function Expression**-এ function-কে একটি variable-এর মধ্যে রাখা হয়। এটি **পুরোপুরি hoisted হয় না**, তাই declare করার আগে call করলে Error আসে।
+
+আমি আমার প্রজেক্টে বেশিরভাগ সময় **Arrow Function (Function Expression)** ব্যবহার করি, কারণ এটি ছোট, পরিষ্কার এবং React-এ বেশি ব্যবহার হয়।
+
+### 💻 Example
+
+**Function Declaration**
+
+```javascript
+sayHello();
+
+function sayHello() {
+  console.log("Hello");
+}
+```
+
+**Function Expression**
+
+```javascript
+const sayHello = function () {
+  console.log("Hello");
+};
+
+sayHello();
+```
