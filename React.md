@@ -163,7 +163,7 @@ A simple collection of React interview questions and answers for junior frontend
 - **State** → Component-এর নিজের data manage করে
 
 ---
-<!-- 
+
 ## Q14. How does conditional rendering work in React?
 
 ### 🇬🇧 Interview Answer
@@ -189,4 +189,4 @@ A simple collection of React interview questions and answers for junior frontend
 সহজভাবে মনে রাখুন:
 - **React.memo** → Props change না হলে unnecessary re-render এড়াতে সাহায্য করে।
 
---- -->
+--- 
