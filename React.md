@@ -135,7 +135,7 @@ A simple collection of React interview questions and answers for junior frontend
 > useRef হলো React-এর একটি Hook, যা এমন কোনো value store করতে ব্যবহার করা হয় যার পরিবর্তনে component আবার render হয় না। এটি সরাসরি DOM element access করার জন্যও ব্যবহার করা হয়। যেমন, আমরা এটি ব্যবহার করে একটি input field-এ focus করতে পারি।
 
 ---
-<!-- 
+
 ## Q12. What are React keys and why are they important in lists?
 
 ### 🇬🇧 Interview Answer
@@ -163,7 +163,7 @@ A simple collection of React interview questions and answers for junior frontend
 - **State** → Component-এর নিজের data manage করে
 
 ---
-
+<!-- 
 ## Q14. How does conditional rendering work in React?
 
 ### 🇬🇧 Interview Answer
