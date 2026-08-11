@@ -58,32 +58,9 @@ A simple collection of React interview questions and answers for junior frontend
 
 > useState is a React Hook used to store and update data inside a functional component. It gives us a state value and a function to update that value. For example, we can use it to create a counter.
 
-### Example
-
-```jsx
-import { useState } from "react";
-
-function Counter() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <div>
-      <p>Count: {count}</p>
-      <button onClick={() => setCount(count + 1)}>
-        Increase
-      </button>
-    </div>
-  );
-}
-```
-
-Here, `count` stores the current value, and `setCount` updates it.
-
 ### 🇧🇩 বাংলা অর্থ
 
 > useState হলো React-এর একটি Hook, যা functional component-এর ভিতরে data store এবং update করতে ব্যবহার করা হয়। এটি আমাদের একটি state value এবং সেই value update করার জন্য একটি function দেয়। যেমন, আমরা এটি দিয়ে একটি counter তৈরি করতে পারি।
-
-Example-এ: `count` বর্তমান value রাখে এবং `setCount` সেই value update করে।
 
 ---
 
@@ -93,54 +70,17 @@ Example-এ: `count` বর্তমান value রাখে এবং `setCoun
 
 > useEffect is a React Hook used to perform tasks after a component renders. It is commonly used for things like fetching data from an API, adding event listeners, or updating the document title.
 
-### Example
-
-```jsx
-import { useEffect } from "react";
-
-useEffect(() => {
-  document.title = "My Website";
-}, []);
-```
-
-Here, `useEffect` changes the browser tab title after the component renders.
-
 ### 🇧🇩 বাংলা অর্থ
 
 > useEffect হলো React-এর একটি Hook, যা component render হওয়ার পরে কিছু কাজ করার জন্য ব্যবহার করা হয়। এটি সাধারণত API থেকে data আনা, event listener যোগ করা, অথবা document title update করার মতো কাজে ব্যবহার করা হয়।
 
-Example-এ: component render হওয়ার পরে `useEffect` browser tab-এর title পরিবর্তন করে।
-
 ---
-<!-- 
+
 ## Q7. What is the difference between controlled and uncontrolled components?
 
 ### 🇬🇧 Interview Answer
 
 > A controlled component is a form element whose value is managed by React state. An uncontrolled component manages its value by the DOM itself, usually using a ref. Controlled components are commonly used when we need to track and control form data.
-
-### Controlled Example
-
-```jsx
-const [name, setName] = useState("");
-
-<input
-  value={name}
-  onChange={(e) => setName(e.target.value)}
-/>
-```
-
-Here, `name` state controls the input value.
-
-### Uncontrolled Example
-
-```jsx
-const inputRef = useRef();
-
-<input ref={inputRef} />
-```
-
-Here, the input value is not controlled by React state.
 
 ### 🇧🇩 বাংলা অর্থ
 
@@ -154,52 +94,17 @@ Here, the input value is not controlled by React state.
 
 > Props are used to pass data from a parent component to a child component. They are passed as attributes and received inside the child component. Props are read-only, so the child component should not change them.
 
-### Example
-
-```jsx
-function App() {
-  return <User name="Opi" />;
-}
-
-function User({ name }) {
-  return <h2>Hello, {name}</h2>;
-}
-```
-
-Here, `name="Opi"` is passed from the parent component to the child component using props.
-
 ### 🇧🇩 বাংলা অর্থ
 
 > Props ব্যবহার করা হয় parent component থেকে child component-এ data পাঠানোর জন্য। এগুলো attribute হিসেবে pass করা হয় এবং child component-এ receive করা হয়। Props read-only, তাই child component থেকে এগুলো change করা উচিত নয়।
 
-Example-এ: `name="Opi"` হলো prop, যা `App` component থেকে `User` component-এ পাঠানো হয়েছে।
-
 ---
-
+<!-- 
 ## Q9. What is prop drilling and how can it be avoided?
 
 ### 🇬🇧 Interview Answer
 
 > Prop drilling happens when we pass data through multiple components just to reach a component that needs it. It can make the code harder to manage. We can avoid it by using Context API, state management libraries, or by keeping the state closer to where it is needed.
-
-### Example
-
-```jsx
-function App() {
-  const user = "Opi";
-  return <Parent user={user} />;
-}
-
-function Parent({ user }) {
-  return <Child user={user} />;
-}
-
-function Child({ user }) {
-  return <h2>Hello, {user}</h2>;
-}
-```
-
-Here, `user` only needs to reach `Child`, but we have to pass it through `Parent`. This is prop drilling.
 
 ### 🇧🇩 বাংলা অর্থ
 
@@ -213,34 +118,9 @@ Here, `user` only needs to reach `Child`, but we have to pass it through `Parent
 
 > useContext is a React Hook used to share data between components without passing props through every level. It is useful for sharing common data like user information, theme, or language.
 
-### Example
-
-```jsx
-import { createContext, useContext } from "react";
-
-const UserContext = createContext();
-
-function App() {
-  return (
-    <UserContext.Provider value="Opi">
-      <User />
-    </UserContext.Provider>
-  );
-}
-
-function User() {
-  const name = useContext(UserContext);
-  return <h2>Hello, {name}</h2>;
-}
-```
-
-Here, `User` can directly get the value `"Opi"` from the context without receiving it through props.
-
 ### 🇧🇩 বাংলা অর্থ
 
 > useContext হলো React-এর একটি Hook, যা props প্রতিটি component-এর মাধ্যমে pass না করে এক component থেকে অন্য component-এ data share করতে ব্যবহার করা হয়। এটি user information, theme বা language-এর মতো common data share করার জন্য useful।
-
-Example-এ: `User` component কোনো props না নিয়েই `UserContext` থেকে সরাসরি `"Opi"` value পাচ্ছে।
 
 ---
 
@@ -250,36 +130,9 @@ Example-এ: `User` component কোনো props না নিয়েই `User
 
 > useRef is a React Hook used to store a value that does not cause a component to re-render when it changes. It is also commonly used to access a DOM element directly. For example, we can use it to focus an input field.
 
-### Example
-
-```jsx
-import { useRef } from "react";
-
-function App() {
-  const inputRef = useRef();
-
-  const handleFocus = () => {
-    inputRef.current.focus();
-  };
-
-  return (
-    <div>
-      <input ref={inputRef} />
-      <button onClick={handleFocus}>
-        Focus
-      </button>
-    </div>
-  );
-}
-```
-
-Here, `useRef` gives us access to the input element, so we can focus it when the button is clicked.
-
 ### 🇧🇩 বাংলা অর্থ
 
 > useRef হলো React-এর একটি Hook, যা এমন কোনো value store করতে ব্যবহার করা হয় যার পরিবর্তনে component আবার render হয় না। এটি সরাসরি DOM element access করার জন্যও ব্যবহার করা হয়। যেমন, আমরা এটি ব্যবহার করে একটি input field-এ focus করতে পারি।
-
-Example-এ: `useRef` দিয়ে input element-এর access নেওয়া হয়েছে এবং button click করলে input-এ focus করা হয়েছে।
 
 ---
 
@@ -289,29 +142,9 @@ Example-এ: `useRef` দিয়ে input element-এর access নেওয�
 
 > Keys are unique values given to elements when we render a list in React. They help React identify which items have changed, been added, or removed. This helps React update the list correctly and efficiently.
 
-### Example
-
-```jsx
-const users = ["Opi", "Rahim", "Karim"];
-
-function UserList() {
-  return (
-    <ul>
-      {users.map((user, index) => (
-        <li key={index}>{user}</li>
-      ))}
-    </ul>
-  );
-}
-```
-
-Here, the `key` helps React identify each list item.
-
 ### 🇧🇩 বাংলা অর্থ
 
 > React-এ list render করার সময় প্রতিটি element-কে একটি unique value দেওয়াকে key বলা হয়। এটি React-কে বুঝতে সাহায্য করে কোন item change, add বা remove হয়েছে। এর ফলে React list-কে সঠিকভাবে এবং efficiently update করতে পারে।
-
-Example-এ: `key={index}` প্রতিটি list item-কে identify করতে সাহায্য করছে।
 
 ---
 
@@ -320,25 +153,6 @@ Example-এ: `key={index}` প্রতিটি list item-কে identify ক�
 ### 🇬🇧 Interview Answer
 
 > Props are used to pass data from a parent component to a child component, while state is used to store and manage data inside a component. Props are read-only, but state can be updated using a state update function like setState.
-
-### Example
-
-```jsx
-function User({ name }) {
-  const [count, setCount] = useState(0);
-
-  return (
-    <div>
-      <h2>{name}</h2>
-      <button onClick={() => setCount(count + 1)}>
-        {count}
-      </button>
-    </div>
-  );
-}
-```
-
-Here, `name` is a prop received from the parent, and `count` is state managed inside the component.
 
 ### 🇧🇩 বাংলা অর্থ
 
@@ -356,31 +170,9 @@ Here, `name` is a prop received from the parent, and `count` is state managed in
 
 > Conditional rendering means showing different UI based on a condition. In React, we can use if-else, the ternary operator, or the && operator to render elements conditionally.
 
-### Example
-
-```jsx
-function App() {
-  const isLoggedIn = true;
-
-  return (
-    <div>
-      {isLoggedIn ? (
-        <h2>Welcome, Opi</h2>
-      ) : (
-        <h2>Please log in</h2>
-      )}
-    </div>
-  );
-}
-```
-
-Here, if `isLoggedIn` is true, React shows "Welcome, Opi". Otherwise, it shows "Please log in".
-
 ### 🇧🇩 বাংলা অর্থ
 
 > Conditional rendering মানে হলো কোনো condition-এর উপর ভিত্তি করে different UI দেখানো। React-এ আমরা if-else, ternary operator অথবা && operator ব্যবহার করে condition অনুযায়ী UI render করতে পারি।
-
-Example-এ: `isLoggedIn` true হলে "Welcome, Opi" দেখাবে, আর false হলে "Please log in" দেখাবে।
 
 ---
 
@@ -389,18 +181,6 @@ Example-এ: `isLoggedIn` true হলে "Welcome, Opi" দেখাবে, আ�
 ### 🇬🇧 Interview Answer
 
 > React.memo is used to prevent a component from re-rendering when its props have not changed. It can improve performance by avoiding unnecessary re-renders. We should use it when a component renders often but its props usually stay the same.
-
-### Example
-
-```jsx
-import React from "react";
-
-const User = React.memo(function User({ name }) {
-  return <h2>Hello, {name}</h2>;
-});
-```
-
-Here, if the `name` prop does not change, React can skip re-rendering the `User` component.
 
 ### 🇧🇩 বাংলা অর্থ
 
