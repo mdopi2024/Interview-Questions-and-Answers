@@ -99,7 +99,7 @@ A simple collection of React interview questions and answers for junior frontend
 > Props ব্যবহার করা হয় parent component থেকে child component-এ data পাঠানোর জন্য। এগুলো attribute হিসেবে pass করা হয় এবং child component-এ receive করা হয়। Props read-only, তাই child component থেকে এগুলো change করা উচিত নয়।
 
 ---
-<!-- 
+
 ## Q9. What is prop drilling and how can it be avoided?
 
 ### 🇬🇧 Interview Answer
@@ -135,7 +135,7 @@ A simple collection of React interview questions and answers for junior frontend
 > useRef হলো React-এর একটি Hook, যা এমন কোনো value store করতে ব্যবহার করা হয় যার পরিবর্তনে component আবার render হয় না। এটি সরাসরি DOM element access করার জন্যও ব্যবহার করা হয়। যেমন, আমরা এটি ব্যবহার করে একটি input field-এ focus করতে পারি।
 
 ---
-
+<!-- 
 ## Q12. What are React keys and why are they important in lists?
 
 ### 🇬🇧 Interview Answer
