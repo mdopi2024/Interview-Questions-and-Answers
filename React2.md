@@ -207,7 +207,7 @@ React.Fragment এবং empty tags — দুটোই আমাকে অত�
 মূল পার্থক্য হলো syntax-এ। আমি short syntax হিসেবে `<>...</>` লিখতে পারি, যেখানে React.Fragment আমাকে আরও বেশি option দেয়, যেমন `key` prop ব্যবহার করা।
 
 ---
-<!--
+
 ## Q57. How do you handle forms in React? Explain with Formik or react-hook-form.
 
 🔑 **Keywords:**
@@ -286,4 +286,4 @@ I use useEffect to handle side effects during these stages. For example, I can f
 
 ---
 
-*Prepared for React technical interview practice — English + বাংলা, sentence-aligned for easy speaking practice.* -->
+*Prepared for React technical interview practice — English + বাংলা, sentence-aligned for easy speaking practice.* 
