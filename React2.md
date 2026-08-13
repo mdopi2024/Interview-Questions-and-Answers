@@ -40,7 +40,7 @@ useMemo হলো React-এর একটি hook, যেটা আমি এক�
 
 ---
 
-<!-- ## Q48. What is the `useCallback` hook and when do you use it?
+ ## Q48. What is the `useCallback` hook and when do you use it?
 
 🔑 **Keywords:**
 - memoize function
@@ -92,7 +92,7 @@ I use Link when I want users to navigate by clicking a link. I use useNavigate w
 আমি Link ব্যবহার করি যখন আমি চাই user কোনো link-এ click করে navigate করুক। আমি useNavigate ব্যবহার করি যখন আমি কোনো logic বা event-এর ভিত্তিতে programmatically navigate করতে চাই। যেমন, successful login-এর পর আমি user-কে dashboard-এ redirect করার জন্য useNavigate ব্যবহার করতে পারি।
 
 ---
-
+<!--
 ## Q51. What are custom hooks in React? Write a simple example.
 
 🔑 **Keywords:**
