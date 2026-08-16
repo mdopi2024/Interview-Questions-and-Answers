@@ -1,626 +1,269 @@
-# 📘 JavaScript Interview Questions & Answers (Easy Version)
+# JavaScript Interview Questions & Answers (Q1–Q15)
+
+A bilingual (English + বাংলা) collection of JavaScript interview questions with natural, speakable, interview-standard answers.
 
 ---
 
-# 1. What is the difference between `var`, `let`, and `const`?
-### `var`, `let`, এবং `const`-এর মধ্যে পার্থক্য কী?
+## Q1. What is the difference between `var`, `let`, and `const`?
 
-### 🇬🇧 English
+🔑 **Keywords:**
+- var = old way, can redeclare/update
+- let = can update, not redeclare (same block)
+- const = cannot update or redeclare
+- default to const, use let when value changes
 
-`var`, `let`, and `const` are all used to create variables in JavaScript, but they work differently.
+**🇬🇧 English**
 
-`var` is the old way to create variables. It can be redeclared and updated, which may cause unexpected bugs.
+Both var, let, and const I use to create variables in JavaScript, but they work differently. `var` is the old way to create variables — it can be redeclared and updated, which sometimes causes unexpected bugs. `let` is what I use when the value needs to change later; it can be updated but not redeclared in the same block. `const` is what I use when the value should never change — it cannot be updated or redeclared. In my projects, I usually use `const` by default and switch to `let` only when the value actually needs to change.
 
-`let` is used when the value needs to change later. It can be updated, but it cannot be redeclared in the same block.
+**🇧🇩 বাংলা**
 
-`const` is used when the value should not change. It cannot be redeclared or updated.
-
-In my projects, I usually use `const` by default and `let` only when the value needs to change.
-
-### 🇧🇩 বাংলা
-
-`var`, `let`, এবং `const`—তিনটিই JavaScript-এ variable তৈরি করার জন্য ব্যবহার করা হয়, তবে এদের কাজের মধ্যে পার্থক্য রয়েছে।
-
-`var` হলো পুরোনো পদ্ধতি। এটি একই নামে আবার লেখা যায় এবং মান পরিবর্তন করা যায়, তাই অনেক সময় অপ্রত্যাশিত bug হতে পারে।
-
-`let` ব্যবহার করা হয় যখন পরে variable-এর মান পরিবর্তন করার প্রয়োজন হয়। এটি update করা যায়, কিন্তু একই block-এ আবার declare করা যায় না।
-
-`const` ব্যবহার করা হয় যখন variable-এর মান পরিবর্তন করার দরকার নেই। এটি update বা redeclare—কোনোটাই করা যায় না।
-
-আমি সাধারণত `const` ব্যবহার করি, আর যদি মান পরিবর্তন করতে হয় তাহলে `let` ব্যবহার করি।
-
-### 💻 Example
-
-```javascript
-var name = "Opi";
-var name = "Korim"; // ✅ Allowed
-
-let age = 18;
-age = 19; // ✅ Allowed
-
-const country = "Bangladesh";
-country = "India"; // ❌ Error
-```
+var, let, এবং const — তিনটাই আমি JavaScript-এ variable তৈরি করার জন্য ব্যবহার করি, কিন্তু এদের কাজের ধরন আলাদা। `var` হলো পুরনো পদ্ধতি — এটি আবার declare এবং update করা যায়, যার ফলে অনেক সময় অপ্রত্যাশিত bug হতে পারে। `let` আমি তখন ব্যবহার করি যখন পরে value পরিবর্তন করতে হবে — এটি update করা যায়, কিন্তু একই block-এ আবার declare করা যায় না। `const` আমি তখন ব্যবহার করি যখন value কখনোই পরিবর্তন হবে না — এটি update বা redeclare কোনোটাই করা যায় না। আমার প্রজেক্টে আমি সাধারণত ডিফল্টভাবে `const` ব্যবহার করি, আর যদি value পরিবর্তন করতে হয় তাহলে `let`-এ switch করি।
 
 ---
 
-# 2. Explain the concept of Hoisting in JavaScript.
-### JavaScript-এ Hoisting কী?
+## Q2. Explain the concept of Hoisting in JavaScript.
 
-### 🇬🇧 English
+🔑 **Keywords:**
+- JS knows variables/functions before running code
+- var → undefined if used before declaration
+- let/const → ReferenceError if used before declaration
+- always declare before use
 
-Hoisting means JavaScript knows about variables and functions before running the code.
+**🇬🇧 English**
 
-With `var`, if we use a variable before declaring it, JavaScript returns `undefined`.
+Hoisting means JavaScript knows about variables and functions before it actually runs the code. With `var`, if I use a variable before declaring it, JavaScript returns `undefined`. With `let` and `const`, if I use them before declaring them, JavaScript throws a `ReferenceError` instead. That's why I always declare my variables before using them.
 
-With `let` and `const`, if we use them before declaring them, JavaScript gives a `ReferenceError`.
+**🇧🇩 বাংলা**
 
-That is why I always declare my variables before using them.
-
-### 🇧🇩 বাংলা
-
-Hoisting মানে JavaScript কোড চালানোর আগে variable এবং function-এর declaration আগে দেখে নেয়।
-
-`var`-এর ক্ষেত্রে declare করার আগে ব্যবহার করলে `undefined` পাওয়া যায়।
-
-কিন্তু `let` এবং `const` declare করার আগে ব্যবহার করলে `ReferenceError` আসে।
-
-তাই আমি সব সময় variable আগে declare করি, তারপর ব্যবহার করি।
-
-### 💻 Example
-
-```javascript
-console.log(name); // undefined
-var name = "Opi";
-
-console.log(age); // ReferenceError
-let age = 18;
-```
-
----
-# 3. What are the primitive data types in JavaScript?
-### JavaScript-এর Primitive Data Types কী কী?
-
-### 🇬🇧 English
-
-Primitive data types are the basic data types in JavaScript.
-
-There are **7 primitive data types**:
-
-- String
-- Number
-- Boolean
-- Undefined
-- Null
-- Symbol
-- BigInt
-
-In my projects, I mostly use String, Number, Boolean, Undefined, and Null.
-
-### 🇧🇩 বাংলা
-
-Primitive Data Types হলো JavaScript-এর মৌলিক বা বেসিক data type।
-
-JavaScript-এ **৭টি Primitive Data Type** রয়েছে।
-
-- String
-- Number
-- Boolean
-- Undefined
-- Null
-- Symbol
-- BigInt
-
-আমার প্রজেক্টে আমি সবচেয়ে বেশি String, Number, Boolean, Undefined এবং Null ব্যবহার করি।
+Hoisting মানে হলো JavaScript কোড আসলে run করার আগেই variable এবং function সম্পর্কে জেনে যায়। `var`-এর ক্ষেত্রে, declare করার আগে ব্যবহার করলে JavaScript `undefined` return করে। `let` এবং `const`-এর ক্ষেত্রে, declare করার আগে ব্যবহার করলে JavaScript এর বদলে `ReferenceError` দেয়। এই কারণে আমি সবসময় variable ব্যবহারের আগে সেটা declare করি।
 
 ---
 
-# 4. What is the difference between `==` and `===`?
-### `==` এবং `===`-এর মধ্যে পার্থক্য কী?
+## Q3. What are the primitive data types in JavaScript?
 
-### 🇬🇧 English
+🔑 **Keywords:**
+- basic/fundamental data types
+- 7 types total
+- String, Number, Boolean, Undefined, Null, Symbol, BigInt
 
-Both `==` and `===` are used to compare two values.
+**🇬🇧 English**
 
-`==` compares only the values. If the data types are different, JavaScript automatically converts the data type before comparing.
+Primitive data types are the basic data types in JavaScript. There are seven primitive data types in total: String, Number, Boolean, Undefined, Null, Symbol, and BigInt. In my projects, I mostly work with String, Number, Boolean, Undefined, and Null.
 
-`===` compares both the value and the data type. It does not convert the data type.
+**🇧🇩 বাংলা**
 
-That is why I always use `===` because it gives more accurate results.
-
-### 🇧🇩 বাংলা
-
-`==` এবং `===`—দুটিই দুটি value তুলনা করার জন্য ব্যবহার করা হয়।
-
-`==` শুধু value তুলনা করে। যদি data type আলাদা হয়, তাহলে JavaScript আগে data type পরিবর্তন করে।
-
-অন্যদিকে `===` value এবং data type—দুটিই তুলনা করে। এটি data type পরিবর্তন করে না।
-
-তাই আমি সব সময় `===` ব্যবহার করি, কারণ এটি বেশি সঠিক ফলাফল দেয়।
-
-### 💻 Example
-
-```javascript
-5 == "5";   // true
-5 === "5";  // false
-```
+Primitive data type হলো JavaScript-এর মৌলিক বা বেসিক data type। JavaScript-এ মোট ৭টা primitive data type আছে: String, Number, Boolean, Undefined, Null, Symbol, এবং BigInt। আমার প্রজেক্টে আমি সবচেয়ে বেশি String, Number, Boolean, Undefined, এবং Null নিয়ে কাজ করি।
 
 ---
 
-# 5. Explain how closures work in JavaScript with an example.
-### JavaScript-এ Closure কী? উদাহরণসহ ব্যাখ্যা করুন।
+## Q4. What is the difference between `==` and `===`?
 
-### 🇬🇧 English
+🔑 **Keywords:**
+- both compare values
+- == compares value only, converts type
+- === compares value + type, no conversion
+- prefer === for accuracy
 
-A closure is when an inner function can access the variables of its outer function, even after the outer function has finished.
+**🇬🇧 English**
 
-It remembers the variables of the outer function and can use them later.
+Both `==` and `===` I use to compare two values, but they behave differently. `==` compares only the values — if the data types are different, JavaScript automatically converts one type before comparing. `===` compares both the value and the data type, without converting anything. That's why I always use `===`, since it gives more accurate and predictable results.
 
-Closures are useful for remembering values and keeping data private.
+**🇧🇩 বাংলা**
 
-### 🇧🇩 বাংলা
-
-Closure হলো এমন একটি feature, যেখানে একটি inner function, outer function শেষ হওয়ার পরও তার variable ব্যবহার করতে পারে।
-
-অর্থাৎ, inner function outer function-এর variable মনে রাখে এবং পরে ব্যবহার করতে পারে।
-
-Closure সাধারণত value মনে রাখা এবং private data তৈরি করার জন্য ব্যবহার হয়।
-
-### 💻 Example
-
-```javascript
-function outer() {
-  let name = "Opi";
-
-  function inner() {
-    console.log(name);
-  }
-
-  return inner;
-}
-
-const showName = outer();
-showName(); // Opi
-```
----
-# 6. What is the difference between `null` and `undefined`?
-### `null` এবং `undefined`-এর মধ্যে পার্থক্য কী?
-
-### 🇬🇧 English
-
-Both `null` and `undefined` mean there is no value, but they are different.
-
-- `undefined` means a variable has been declared, but no value has been assigned yet.
-- `null` means we intentionally set the value to empty.
-
-In simple words:
-
-- **`undefined` = No value yet.**
-- **`null` = Empty value on purpose.**
-
-### 🇧🇩 বাংলা
-
-`null` এবং `undefined`—দুটিরই অর্থ হলো কোনো value নেই, কিন্তু এদের মধ্যে পার্থক্য আছে।
-
-- `undefined` মানে variable তৈরি করা হয়েছে, কিন্তু এখনো কোনো value দেওয়া হয়নি।
-- `null` মানে আমরা ইচ্ছা করে variable-এর value খালি রেখেছি।
-
-সহজভাবে,
-
-- **`undefined` = এখনো কোনো value নেই।**
-- **`null` = ইচ্ছা করে খালি value রাখা হয়েছে।**
-
-### 💻 Example
-
-```javascript
-let name;
-console.log(name); // undefined
-
-let age = null;
-console.log(age); // null
-```
+`==` এবং `===` — দুটোই আমি দুটো value তুলনা করার জন্য ব্যবহার করি, কিন্তু এদের আচরণ আলাদা। `==` শুধু value তুলনা করে — যদি data type আলাদা হয়, তাহলে JavaScript compare করার আগে একটাকে অন্যটায় convert করে নেয়। `===` value এবং data type দুটোই তুলনা করে, কোনো conversion ছাড়াই। এই কারণে আমি সবসময় `===` ব্যবহার করি, কারণ এটি বেশি accurate এবং predictable result দেয়।
 
 ---
 
-# 7. What are Arrow Functions and how do they differ from Regular Functions?
-### Arrow Function কী এবং এটি Regular Function থেকে কীভাবে আলাদা?
+## Q5. Explain how closures work in JavaScript.
 
-### 🇬🇧 English
+🔑 **Keywords:**
+- inner function accesses outer function's variables
+- works even after outer function finishes
+- remembers values, keeps data private
 
-Arrow functions are a shorter way to write functions in JavaScript.
+**🇬🇧 English**
 
-The main difference is the syntax.
+A closure is when an inner function can access the variables of its outer function, even after the outer function has already finished running. It remembers those variables and can keep using them later. I find closures especially useful for remembering values across calls and for keeping certain data private.
 
-A regular function is written like this:
+**🇧🇩 বাংলা**
 
-```javascript
-function greet() {
-  console.log("Hello");
-}
-```
-
-An arrow function is written like this:
-
-```javascript
-const greet = () => {
-  console.log("Hello");
-};
-```
-
-Both functions do the same job, but arrow functions use less code.
-
-In my React projects, I mostly use arrow functions because they are shorter and easier to read.
-
-### 🇧🇩 বাংলা
-
-Arrow Function হলো JavaScript-এ function লেখার একটি ছোট এবং সহজ উপায়।
-
-মূল পার্থক্য হলো লেখার পদ্ধতিতে (syntax)।
-
-Regular Function:
-
-```javascript
-function greet() {
-  console.log("Hello");
-}
-```
-
-Arrow Function:
-
-```javascript
-const greet = () => {
-  console.log("Hello");
-};
-```
-
-দুটিই একই কাজ করে, কিন্তু Arrow Function-এ কম কোড লিখতে হয়।
-
-আমি আমার React প্রজেক্টে বেশিরভাগ সময় Arrow Function ব্যবহার করি, কারণ এটি ছোট এবং পড়তে সহজ।
+Closure হলো এমন একটি বিষয়, যেখানে একটি inner function তার outer function-এর variable access করতে পারে, এমনকি outer function শেষ হয়ে যাওয়ার পরেও। এটি সেই variable-গুলো মনে রাখে এবং পরেও ব্যবহার করতে পারে। আমি closure বিশেষভাবে useful মনে করি value মনে রাখার জন্য এবং কিছু data private রাখার জন্য।
 
 ---
 
-# 8. What is the Scope Chain in JavaScript?
-### JavaScript-এ Scope Chain কী?
+## Q6. What is the difference between `null` and `undefined`?
 
-### 🇬🇧 English
+🔑 **Keywords:**
+- both mean "no value" but different
+- undefined = declared, no value assigned yet
+- null = intentionally set to empty
 
-The scope chain is the way JavaScript looks for a variable.
+**🇬🇧 English**
 
-First, JavaScript checks the current scope.
+Both null and undefined mean there is no value, but they're used differently. `undefined` means a variable has been declared but no value has been assigned to it yet. `null` means I've intentionally set the value to empty. In short — `undefined` is "no value yet," and `null` is "empty value on purpose."
 
-If it cannot find the variable, it looks in the outer scope.
+**🇧🇩 বাংলা**
 
-It keeps searching until it finds the variable or reaches the global scope.
-
-### 🇧🇩 বাংলা
-
-Scope Chain হলো JavaScript-এর variable খোঁজার প্রক্রিয়া।
-
-প্রথমে JavaScript current scope-এ variable খোঁজে।
-
-যদি সেখানে না পায়, তাহলে outer scope-এ খোঁজে।
-
-এভাবে variable পাওয়া পর্যন্ত বা global scope-এ পৌঁছানো পর্যন্ত খুঁজতে থাকে।
-
-### 💻 Example
-
-```javascript
-let name = "Opi";
-
-function outer() {
-  let age = 18;
-
-  function inner() {
-    console.log(name);
-    console.log(age);
-  }
-
-  inner();
-}
-
-outer();
-```
-
-Here, `inner()` cannot find `name` or `age` inside its own scope, so JavaScript looks in the outer scope. This process is called the **Scope Chain**.
-
-এখানে `inner()` function নিজের scope-এ `name` বা `age` পায় না। তাই JavaScript বাইরের scope-এ খুঁজে পায়। এই প্রক্রিয়াকেই **Scope Chain** বলা হয়।
----
-# 9. Explain the concept of the Temporal Dead Zone (TDZ).
-### Temporal Dead Zone (TDZ) কী?
-
-### 🇬🇧 English
-
-The **Temporal Dead Zone (TDZ)** is the time before a `let` or `const` variable is declared.
-
-If we try to use the variable before its declaration, JavaScript throws a **ReferenceError**.
-
-This happens because `let` and `const` are hoisted, but they cannot be used until the declaration line is reached.
-
-That is why I always declare `let` and `const` variables before using them.
-
-### 🇧🇩 বাংলা
-
-**Temporal Dead Zone (TDZ)** হলো `let` বা `const` variable declare করার আগের সময়।
-
-এই সময়ে যদি আমরা variable ব্যবহার করি, তাহলে JavaScript **ReferenceError** দেয়।
-
-এটি হয় কারণ `let` এবং `const` hoist হয়, কিন্তু declaration লাইনে পৌঁছানোর আগে ব্যবহার করা যায় না।
-
-তাই আমি সব সময় `let` এবং `const` variable আগে declare করি, তারপর ব্যবহার করি।
-
-### 💻 Example
-
-```javascript
-console.log(name); // ReferenceError
-
-let name = "Opi";
-```
+null এবং undefined — দুটোরই মানে হলো কোনো value নেই, কিন্তু এদের ব্যবহার আলাদা। `undefined` মানে variable declare করা হয়েছে কিন্তু এখনো কোনো value assign করা হয়নি। `null` মানে আমি ইচ্ছাকৃতভাবে value খালি রেখেছি। সংক্ষেপে — `undefined` হলো "এখনো value নেই", আর `null` হলো "ইচ্ছাকৃতভাবে খালি value"।
 
 ---
 
-# 10. What is a Pure Function? Give an example.
-### Pure Function কী? একটি উদাহরণ দিন।
+## Q7. What are Arrow Functions and how do they differ from Regular Functions?
 
-### 🇬🇧 English
+🔑 **Keywords:**
+- shorter way to write functions
+- main difference is syntax
+- both do same job, arrow = less code
+- common in React
 
-A **pure function** is a function that always returns the same output for the same input.
+**🇬🇧 English**
 
-It also does not change any outside variables or data.
+Both arrow functions and regular functions I use to write functions in JavaScript, but the main difference between them is syntax. Arrow functions are a shorter way to write the same logic — both do the same job, but arrow functions need less code. In my React projects, I mostly use arrow functions because they're shorter and easier to read.
 
-Pure functions are easy to understand, test, and reuse.
+**🇧🇩 বাংলা**
 
-### 🇧🇩 বাংলা
-
-**Pure Function** হলো এমন একটি function, যা একই input দিলে সব সময় একই output দেয়।
-
-এছাড়া, এটি বাইরের কোনো variable বা data পরিবর্তন করে না।
-
-Pure Function বুঝতে সহজ, test করা সহজ এবং আবার ব্যবহার করা সহজ।
-
-### 💻 Example
-
-```javascript
-function add(a, b) {
-  return a + b;
-}
-
-console.log(add(2, 3)); // 5
-console.log(add(2, 3)); // 5
-```
-
-Here, every time we pass `2` and `3`, the function returns `5`. So, it is a **Pure Function**.
-
-এখানে প্রতিবার `2` এবং `3` দিলে function `5` return করে। তাই এটি একটি **Pure Function**।
+Arrow function এবং regular function — দুটোই আমি JavaScript-এ function লেখার জন্য ব্যবহার করি, কিন্তু এদের মূল পার্থক্য হলো syntax-এ। Arrow function একই logic লেখার একটি ছোট উপায় — দুটোই একই কাজ করে, কিন্তু arrow function-এ কম কোড লাগে। আমার React প্রজেক্টে আমি বেশিরভাগ সময় arrow function ব্যবহার করি, কারণ এটি ছোট এবং পড়তে সহজ।
 
 ---
 
-# 11. What is the difference between Function Declaration and Function Expression?
-### Function Declaration এবং Function Expression-এর মধ্যে পার্থক্য কী?
+## Q8. What is the Scope Chain in JavaScript?
 
-### 🇬🇧 English
+🔑 **Keywords:**
+- how JS searches for a variable
+- checks current scope first
+- then outer scope, repeatedly
+- until found or reaches global scope
 
-Both Function Declaration and Function Expression are used to create functions.
+**🇬🇧 English**
 
-A **Function Declaration** starts with the `function` keyword and is **hoisted**, so it can be called before it is declared.
+The scope chain is the way JavaScript looks for a variable. First, JavaScript checks the current scope. If it can't find the variable there, it looks in the outer scope, and keeps searching outward until it either finds the variable or reaches the global scope.
 
-A **Function Expression** stores a function inside a variable. It is **not fully hoisted**, so it cannot be called before its declaration.
+**🇧🇩 বাংলা**
 
-In my projects, I mostly use **Function Expressions with Arrow Functions** because they are cleaner and commonly used in React.
-
-### 🇧🇩 বাংলা
-
-Function Declaration এবং Function Expression—দুটিই function তৈরি করার জন্য ব্যবহার করা হয়।
-
-**Function Declaration** `function` keyword দিয়ে শুরু হয় এবং এটি **hoisted** হয়। তাই declare করার আগেও call করা যায়।
-
-**Function Expression**-এ function-কে একটি variable-এর মধ্যে রাখা হয়। এটি **পুরোপুরি hoisted হয় না**, তাই declare করার আগে call করলে Error আসে।
-
-আমি আমার প্রজেক্টে বেশিরভাগ সময় **Arrow Function (Function Expression)** ব্যবহার করি, কারণ এটি ছোট, পরিষ্কার এবং React-এ বেশি ব্যবহার হয়।
-
-### 💻 Example
-
-**Function Declaration**
-
-```javascript
-sayHello();
-
-function sayHello() {
-  console.log("Hello");
-}
-```
-
-**Function Expression**
-
-```javascript
-const sayHello = function () {
-  console.log("Hello");
-};
-
-sayHello();
-```
----
-# 12. What are Default Parameters in JavaScript?
-### JavaScript-এ Default Parameters কী?
-
-### 🇬🇧 English
-
-Default parameters allow us to set a **default value** for a function parameter.
-
-If we do not pass a value when calling the function, JavaScript automatically uses the default value.
-
-Default parameters help us avoid `undefined` values and make the code cleaner.
-
-### 🇧🇩 বাংলা
-
-Default Parameters ব্যবহার করে আমরা function-এর parameter-এর জন্য একটি **default value** দিতে পারি।
-
-যদি function call করার সময় কোনো value না দিই, তাহলে JavaScript সেই **default value** ব্যবহার করে।
-
-এটি `undefined` এড়াতে সাহায্য করে এবং কোডকে আরও পরিষ্কার করে।
-
-### 💻 Example
-
-```javascript
-function greet(name = "Guest") {
-  return `Hello, ${name}`;
-}
-
-console.log(greet());      // Hello, Guest
-console.log(greet("Opi")); // Hello, Opi
-```
-
-Here, if no value is passed, JavaScript uses `"Guest"` as the default value.
-
-এখানে যদি কোনো value না দেওয়া হয়, তাহলে JavaScript `"Guest"`-কে default value হিসেবে ব্যবহার করে।
+Scope chain হলো JavaScript-এর variable খোঁজার প্রক্রিয়া। প্রথমে JavaScript current scope-এ variable খোঁজে। সেখানে না পেলে outer scope-এ খোঁজে, এবং এভাবে বাইরের দিকে খুঁজতেই থাকে যতক্ষণ না variable পাওয়া যায় অথবা global scope-এ পৌঁছায়।
 
 ---
 
-# 13. What is the `typeof` operator and what are its possible return values?
-### `typeof` Operator কী এবং এটি কী কী return করতে পারে?
+## Q9. Explain the concept of the Temporal Dead Zone (TDZ).
 
-### 🇬🇧 English
+🔑 **Keywords:**
+- time before let/const is declared
+- using before declaration → ReferenceError
+- hoisted but unusable until declaration line
 
-The `typeof` operator is used to check the **data type** of a value or variable.
+**🇬🇧 English**
 
-It returns the data type as a string.
+The Temporal Dead Zone, or TDZ, is the time before a `let` or `const` variable is actually declared. If I try to use that variable before its declaration, JavaScript throws a `ReferenceError`. This happens because `let` and `const` are hoisted, but they can't be used until the code actually reaches their declaration line. That's why I always declare `let` and `const` variables before using them.
 
-The most common return values are:
+**🇧🇩 বাংলা**
 
-- `"string"`
-- `"number"`
-- `"boolean"`
-- `"undefined"`
-- `"object"`
-- `"function"`
-- `"symbol"`
-- `"bigint"`
-
-I use `typeof` in my projects to check the data type before working with a value.
-
-### 🇧🇩 বাংলা
-
-`typeof` operator ব্যবহার করা হয় কোনো **value বা variable-এর data type** জানার জন্য।
-
-এটি data type-কে **string** আকারে return করে।
-
-সবচেয়ে বেশি ব্যবহৃত return values হলো:
-
-- `"string"`
-- `"number"`
-- `"boolean"`
-- `"undefined"`
-- `"object"`
-- `"function"`
-- `"symbol"`
-- `"bigint"`
-
-আমি আমার প্রজেক্টে কোনো value-এর data type যাচাই করার জন্য `typeof` ব্যবহার করি।
-
-### 💻 Example
-
-```javascript
-console.log(typeof "Hello");      // "string"
-console.log(typeof 10);           // "number"
-console.log(typeof true);         // "boolean"
-console.log(typeof undefined);    // "undefined"
-console.log(typeof null);         // "object"
-console.log(typeof Symbol());     // "symbol"
-console.log(typeof 10n);          // "bigint"
-console.log(typeof {});           // "object"
-console.log(typeof []);           // "object"
-console.log(typeof function(){}); // "function"
-```
-
-> **💡 Interview Tip:**  
-> `typeof null` returns **`"object"`**. This is a well-known JavaScript behavior and is a very common interview follow-up question.
-
----
-# 14. Explain Type Coercion in JavaScript with examples.
-### JavaScript-এ Type Coercion কী? উদাহরণসহ ব্যাখ্যা করুন।
-
-### 🇬🇧 English
-
-Type coercion means JavaScript **automatically changes one data type into another** when needed.
-
-This usually happens when we use operators like `+`, `-`, or `==`.
-
-For example, if we add a string and a number, JavaScript converts the number into a string.
-
-If we subtract a string and a number, JavaScript converts the string into a number.
-
-To avoid unexpected results, I prefer using `===` instead of `==`.
-
-### 🇧🇩 বাংলা
-
-Type Coercion মানে JavaScript **প্রয়োজন হলে নিজে থেকেই একটি data type-কে অন্য data type-এ পরিবর্তন করে।**
-
-এটি সাধারণত `+`, `-` অথবা `==` operator ব্যবহার করার সময় ঘটে।
-
-যদি string এবং number যোগ করা হয়, তাহলে JavaScript number-কে string-এ পরিবর্তন করে।
-
-আর যদি বিয়োগ করা হয়, তাহলে JavaScript string-কে number-এ পরিবর্তন করে।
-
-অপ্রত্যাশিত ফলাফল এড়াতে আমি সাধারণত `===` ব্যবহার করি।
-
-### 💻 Example
-
-```javascript
-console.log("5" + 2); // "52"
-
-console.log("5" - 2); // 3
-
-console.log(5 == "5"); // true
-
-console.log(5 === "5"); // false
-```
+Temporal Dead Zone, বা TDZ, হলো একটা `let` বা `const` variable আসলে declare হওয়ার আগের সময়। এই সময়ে সেই variable ব্যবহার করার চেষ্টা করলে JavaScript `ReferenceError` দেয়। এটা হয় কারণ `let` এবং `const` hoist হয়, কিন্তু কোড আসলে সেই declaration লাইনে না পৌঁছানো পর্যন্ত সেগুলো ব্যবহার করা যায় না। এই কারণে আমি সবসময় `let` এবং `const` variable ব্যবহারের আগে declare করি।
 
 ---
 
-# 15. What is an Immediately Invoked Function Expression (IIFE)?
-### Immediately Invoked Function Expression (IIFE) কী?
+## Q10. What is a Pure Function?
 
-### 🇬🇧 English
+🔑 **Keywords:**
+- same input → same output, always
+- doesn't change outside variables/data
+- easy to test and reuse
 
-An **Immediately Invoked Function Expression (IIFE)** is a function that **runs immediately after it is created**.
+**🇬🇧 English**
 
-We do not need to call it separately because it executes automatically.
+A pure function is a function that always returns the same output for the same input. It also doesn't change any variables or data outside itself. I like pure functions because they're easy to understand, test, and reuse.
 
-IIFEs are useful when we want to run some code only once and avoid creating unnecessary global variables.
+**🇧🇩 বাংলা**
 
-### 🇧🇩 বাংলা
-
-**Immediately Invoked Function Expression (IIFE)** হলো এমন একটি function, যা **তৈরি হওয়ার সঙ্গে সঙ্গেই execute হয়।**
-
-এটিকে আলাদা করে call করতে হয় না, কারণ এটি নিজে থেকেই execute হয়।
-
-IIFE সাধারণত একবার কোনো কাজ করার জন্য এবং global scope-এ অপ্রয়োজনীয় variable তৈরি না করার জন্য ব্যবহার করা হয়।
-
-### 💻 Example
-
-```javascript
-(function () {
-  console.log("Hello, World!");
-})();
-```
+Pure function হলো এমন একটি function, যা একই input দিলে সবসময় একই output দেয়। এছাড়া এটি নিজের বাইরের কোনো variable বা data পরিবর্তন করে না। আমি pure function পছন্দ করি কারণ এগুলো বুঝতে, test করতে এবং পুনরায় ব্যবহার করতে সহজ।
 
 ---
 
-# 🎯 JavaScript Interview Quick Revision
+## Q11. What is the difference between Function Declaration and Function Expression?
 
-| No. | Question | Short Answer |
-|------|----------|--------------|
-| **1** | Difference between `var`, `let`, and `const` | `var` is old, `let` can change, `const` cannot change. |
-| **2** | Hoisting | JavaScript knows about variables and functions before running the code. |
-| **3** | Primitive Data Types | String, Number, Boolean, Undefined, Null, Symbol, BigInt. |
-| **4** | `==` vs `===` | `==` compares value only, `===` compares value and data type. |
-| **5** | Closure | An inner function can use the outer function's variables after the outer function finishes. |
-| **6** | `null` vs `undefined` | `undefined` means no value yet, `null` means empty value on purpose. |
-| **7** | Arrow Function | A shorter way to write functions. |
-| **8** | Scope Chain | JavaScript looks for variables from the current scope to the outer scope. |
-| **9** | Temporal Dead Zone | Using `let` or `const` before declaration causes a `ReferenceError`. |
-| **10** | Pure Function | Same input always gives the same output and doesn't change outside data. |
-| **11** | Function Declaration vs Expression | Declaration is hoisted, Expression is not fully hoisted. |
-| **12** | Default Parameters | Provide a default value if no argument is passed. |
-| **13** | `typeof` Operator | Used to check the data type of a value or variable. |
-| **14** | Type Coercion | JavaScript automatically converts one data type into another. |
-| **15** | IIFE | A function that runs immediately after it is created. |
+🔑 **Keywords:**
+- both create functions
+- declaration = starts with `function`, fully hoisted, callable before declared
+- expression = stored in variable, not fully hoisted
+- prefer arrow function expressions in React
+
+**🇬🇧 English**
+
+Both function declarations and function expressions I use to create functions, but they behave differently. A function declaration starts with the `function` keyword and is hoisted, so I can call it even before it's declared. A function expression stores a function inside a variable — it's not fully hoisted, so I can't call it before its declaration. In my projects, I mostly use function expressions with arrow functions, since they're cleaner and commonly used in React.
+
+**🇧🇩 বাংলা**
+
+Function declaration এবং function expression — দুটোই আমি function তৈরি করার জন্য ব্যবহার করি, কিন্তু এদের আচরণ আলাদা। Function declaration `function` keyword দিয়ে শুরু হয় এবং hoisted হয়, তাই আমি এটাকে declare করার আগেও call করতে পারি। Function expression একটা function-কে একটা variable-এর ভিতরে রাখে — এটি পুরোপুরি hoisted হয় না, তাই declare করার আগে call করা যায় না। আমার প্রজেক্টে আমি বেশিরভাগ সময় arrow function দিয়ে function expression ব্যবহার করি, কারণ এটি cleaner এবং React-এ বেশি ব্যবহৃত হয়।
+
+---
+
+## Q12. What are Default Parameters in JavaScript?
+
+🔑 **Keywords:**
+- set a default value for a parameter
+- used when no argument is passed
+- avoids undefined, cleaner code
+
+**🇬🇧 English**
+
+Default parameters let me set a default value for a function parameter. If I don't pass a value when calling the function, JavaScript automatically uses that default value instead. This helps me avoid `undefined` values and keeps my code cleaner.
+
+**🇧🇩 বাংলা**
+
+Default parameters আমাকে একটি function-এর parameter-এর জন্য একটা default value সেট করতে দেয়। function call করার সময় যদি আমি কোনো value না দিই, তাহলে JavaScript সেই default value নিজে থেকেই ব্যবহার করে। এটি আমাকে `undefined` value এড়াতে সাহায্য করে এবং কোডকে আরও পরিষ্কার রাখে।
+
+---
+
+## Q13. What is the `typeof` operator and what are its possible return values?
+
+🔑 **Keywords:**
+- checks the data type of a value/variable
+- returns type as a string
+- values: string, number, boolean, undefined, object, function, symbol, bigint
+- quirk: `typeof null` returns "object"
+
+**🇬🇧 English**
+
+The typeof operator is what I use to check the data type of a value or variable. It returns the data type as a string — the most common ones being `"string"`, `"number"`, `"boolean"`, `"undefined"`, `"object"`, `"function"`, `"symbol"`, and `"bigint"`. One thing worth knowing for interviews is that `typeof null` actually returns `"object"` — that's a well-known quirk in JavaScript, not a bug I introduced.
+
+**🇧🇩 বাংলা**
+
+typeof operator আমি কোনো value বা variable-এর data type জানার জন্য ব্যবহার করি। এটি data type-কে string আকারে return করে — সবচেয়ে common গুলো হলো `"string"`, `"number"`, `"boolean"`, `"undefined"`, `"object"`, `"function"`, `"symbol"`, এবং `"bigint"`। Interview-এর জন্য একটা গুরুত্বপূর্ণ বিষয় হলো, `typeof null` আসলে `"object"` return করে — এটা JavaScript-এর একটা well-known quirk, কোনো bug না।
+
+---
+
+## Q14. Explain Type Coercion in JavaScript.
+
+🔑 **Keywords:**
+- JS auto-converts one data type to another
+- happens with +, -, == operators
+- string + number → string; string - number → number
+- prefer === to avoid unexpected results
+
+**🇬🇧 English**
+
+Type coercion means JavaScript automatically converts one data type into another when needed. This usually happens when I use operators like `+`, `-`, or `==`. For example, if I add a string and a number, JavaScript converts the number into a string. If I subtract a string and a number, JavaScript converts the string into a number instead. To avoid unexpected results, I prefer using `===` over `==`.
+
+**🇧🇩 বাংলা**
+
+Type coercion মানে হলো JavaScript প্রয়োজন হলে নিজে থেকেই একটা data type-কে অন্য data type-এ পরিবর্তন করে। এটা সাধারণত `+`, `-`, বা `==` operator ব্যবহার করার সময় ঘটে। যেমন, যদি আমি একটা string এবং number যোগ করি, JavaScript number-কে string-এ পরিবর্তন করে। আর যদি বিয়োগ করি, তাহলে JavaScript string-কে number-এ পরিবর্তন করে। অপ্রত্যাশিত result এড়াতে আমি `==`-এর বদলে `===` ব্যবহার করতে পছন্দ করি।
+
+---
+
+## Q15. What is an Immediately Invoked Function Expression (IIFE)?
+
+🔑 **Keywords:**
+- function runs immediately after creation
+- no separate call needed
+- avoids unnecessary global variables
+- runs code once
+
+**🇬🇧 English**
+
+An Immediately Invoked Function Expression, or IIFE, is a function that runs immediately after it's created. I don't need to call it separately since it executes automatically. I find IIFEs useful when I want to run some code just once and avoid creating unnecessary variables in the global scope.
+
+**🇧🇩 বাংলা**
+
+Immediately Invoked Function Expression, বা IIFE, হলো এমন একটি function, যা তৈরি হওয়ার সাথে সাথেই run হয়ে যায়। আমাকে এটাকে আলাদাভাবে call করতে হয় না, কারণ এটি নিজে থেকেই execute হয়। আমি IIFE তখন useful মনে করি যখন আমি কোনো কোড শুধু একবার run করতে চাই এবং global scope-এ অপ্রয়োজনীয় variable তৈরি করা এড়াতে চাই।
+
+---
