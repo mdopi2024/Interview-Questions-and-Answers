@@ -49,7 +49,7 @@ A bilingual (English + বাংলা) collection of React and Next.js intervie
 [⚡ Final Quick Revision](#-final-quick-revision)
 
 ---
-<!--
+
 
 # 🟦 REACT
 
@@ -304,7 +304,7 @@ Child component-এ callback পাঠানোর সময় unnecessary func
 > useMemo memoizes a value; useCallback memoizes a function reference.
 
 ---
-
+<!--
 ## 12. After Submitting a Form, It Resets. How Do We Solve It?
 
 ### 🔹 Brief Explanation
