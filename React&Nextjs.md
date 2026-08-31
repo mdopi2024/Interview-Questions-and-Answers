@@ -302,9 +302,8 @@ Child component-এ callback পাঠানোর সময় unnecessary func
 ### Short Answer
 
 > useMemo memoizes a value; useCallback memoizes a function reference.
-
 ---
-<!--
+
 ## 12. After Submitting a Form, It Resets. How Do We Solve It?
 
 ### 🔹 Brief Explanation
@@ -532,7 +531,7 @@ Product information display → Server Component।
 Add-to-cart button with interactive state → Client Component।
 
 ---
-
+<!--
 ## 23. How Does Dynamic Routing Work in Next.js?
 
 ### 🔹 Brief Explanation
