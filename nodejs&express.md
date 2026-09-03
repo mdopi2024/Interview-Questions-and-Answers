@@ -155,7 +155,7 @@ Node.js Event Loop এবং libuv ব্যবহার করে non-blocking 
 Node.js achieves non-blocking I/O using the Event Loop and libuv. When an I/O operation starts, Node.js does not wait for it. It continues executing other JavaScript code. When the I/O operation is completed, the Event Loop handles the result or callback.
 
 ---
-<!-- 
+
 ## 11. Explain CommonJS vs ES Modules in Node.js.
 
 ### সহজভাবে বুঝি
@@ -230,7 +230,7 @@ npm install চালালে npm প্রথমে package.json থেকে 
 When we run npm install, npm first reads the dependencies from package.json. Then it resolves the dependency versions, downloads the packages, and installs them into the node_modules folder. If package-lock.json exists, npm can use it to install consistent dependency versions.
 
 ---
-
+<!-- 
 # 🟢 EXPRESS.JS INTERVIEW QUESTIONS
 
 ## 16. Explain the Express.js request-response lifecycle.
