@@ -85,7 +85,7 @@ Stream হলো এমন একটি mechanism, যা পুরো data এ�
 A Stream is a mechanism that allows us to process data in small chunks instead of loading the entire data into memory. Node.js has four main types of streams. Readable streams read data, Writable streams write data, Duplex streams can read and write data, and Transform streams can read, write, and modify data.
 
 ---
-<!-- 
+
 ## 6. How would you handle large file uploads efficiently in Node.js?
 
 ### সহজভাবে বুঝি
@@ -155,7 +155,7 @@ Node.js Event Loop এবং libuv ব্যবহার করে non-blocking 
 Node.js achieves non-blocking I/O using the Event Loop and libuv. When an I/O operation starts, Node.js does not wait for it. It continues executing other JavaScript code. When the I/O operation is completed, the Event Loop handles the result or callback.
 
 ---
-
+<!-- 
 ## 11. Explain CommonJS vs ES Modules in Node.js.
 
 ### সহজভাবে বুঝি
