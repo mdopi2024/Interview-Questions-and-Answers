@@ -230,7 +230,7 @@ npm install চালালে npm প্রথমে package.json থেকে 
 When we run npm install, npm first reads the dependencies from package.json. Then it resolves the dependency versions, downloads the packages, and installs them into the node_modules folder. If package-lock.json exists, npm can use it to install consistent dependency versions.
 
 ---
-<!-- 
+
 # 🟢 EXPRESS.JS INTERVIEW QUESTIONS
 
 ## 16. Explain the Express.js request-response lifecycle.
@@ -295,7 +295,7 @@ Express middleware এবং route handler-এর একটি stack maintain �
 Express maintains a stack of middleware and route handlers. When next() is called, Express moves the request to the next matching middleware or route handler in the stack. If next(error) is called, Express skips the normal middleware and moves to the error-handling middleware.
 
 ---
-
+<!-- 
 ## 20. How would you structure a scalable Express.js project?
 
 ### সহজভাবে বুঝি
