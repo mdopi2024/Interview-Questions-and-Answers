@@ -405,7 +405,7 @@ Authentication হলো user কে verify করা বা user কে চে�
 Authentication means verifying who the user is. Authorization means checking what the user is allowed to do.
 
 ---
-<!-- 
+
 ## 26. How do you implement role-based access control (RBAC)?
 
 ### সহজভাবে বুঝি
@@ -483,4 +483,4 @@ Stateful → Server session store করে → Session ID
 Stateless authentication-এ server user-এর session information store করে না। সাধারণত JWT token ব্যবহার করা হয় এবং প্রতিটি request-এর সাথে token পাঠানো হয়। Stateful authentication-এ server user-এর session store করে এবং browser session ID cookie হিসেবে পাঠায়।
 
 ### English Interview Answer
-In stateless authentication, the server does not store the user's session information. Usually, a JWT token is used and sent with each request. In stateful authentication, the server stores the user's session and the browser sends the session ID as a cookie. -->
+In stateless authentication, the server does not store the user's session information. Usually, a JWT token is used and sent with each request. In stateful authentication, the server stores the user's session and the browser sends the session ID as a cookie. 
