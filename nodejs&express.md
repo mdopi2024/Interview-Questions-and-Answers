@@ -295,7 +295,7 @@ Express middleware এবং route handler-এর একটি stack maintain �
 Express maintains a stack of middleware and route handlers. When next() is called, Express moves the request to the next matching middleware or route handler in the stack. If next(error) is called, Express skips the normal middleware and moves to the error-handling middleware.
 
 ---
-<!-- 
+
 ## 20. How would you structure a scalable Express.js project?
 
 ### সহজভাবে বুঝি
@@ -405,7 +405,7 @@ Authentication হলো user কে verify করা বা user কে চে�
 Authentication means verifying who the user is. Authorization means checking what the user is allowed to do.
 
 ---
-
+<!-- 
 ## 26. How do you implement role-based access control (RBAC)?
 
 ### সহজভাবে বুঝি
