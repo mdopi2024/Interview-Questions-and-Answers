@@ -83,7 +83,7 @@ MongoDB-তে একটি **Collection-এর মধ্যে অনেকগ�
 **In MongoDB, data is stored as documents inside a collection. A collection can contain many documents, and each document represents a separate record. The data inside a document is stored as fields and values.**
 
 ---
-<!--
+
 ## Q06. Describe what a MongoDB database is.
 
 ### সংক্ষিপ্ত ব্যাখ্যা
@@ -175,7 +175,7 @@ MongoDB-এর **`_id` field** প্রতিটি Document-কে আলা�
 **The `_id` field in MongoDB is used to uniquely identify each document. It must be unique for every document. If we do not provide an `_id`, MongoDB automatically creates a unique ObjectId.**
 
 ---
-
+<!--
 ## Q11. How do you create a new MongoDB collection?
 
 ### সংক্ষিপ্ত ব্যাখ্যা
