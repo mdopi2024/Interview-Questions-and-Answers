@@ -274,7 +274,6 @@ db.users.deleteMany({ age: 18 })
 **In MongoDB, we use the `deleteOne()` and `deleteMany()` commands to delete documents. `deleteOne()` deletes one matching document, while `deleteMany()` deletes multiple matching documents.**
 
 ---
-<!--
 ## Q16. Can you join two collections in MongoDB? If so, how?
 
 ### সংক্ষিপ্ত ব্যাখ্যা
@@ -378,4 +377,4 @@ db.products.find()
 
 ### English Interview Answer
 
-**We use `insertOne()` to insert one document into a MongoDB collection. On the other hand, we use `insertMany()` to insert multiple documents at once. So, we use `insertOne()` for one document and `insertMany()` for multiple documents.** -->
+**We use `insertOne()` to insert one document into a MongoDB collection. On the other hand, we use `insertMany()` to insert multiple documents at once. So, we use `insertOne()` for one document and `insertMany()` for multiple documents.** 
