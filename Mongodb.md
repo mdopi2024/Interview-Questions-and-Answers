@@ -175,7 +175,7 @@ MongoDB-এর **`_id` field** প্রতিটি Document-কে আলা�
 **The `_id` field in MongoDB is used to uniquely identify each document. It must be unique for every document. If we do not provide an `_id`, MongoDB automatically creates a unique ObjectId.**
 
 ---
-<!--
+
 ## Q11. How do you create a new MongoDB collection?
 
 ### সংক্ষিপ্ত ব্যাখ্যা
@@ -274,7 +274,7 @@ db.users.deleteMany({ age: 18 })
 **In MongoDB, we use the `deleteOne()` and `deleteMany()` commands to delete documents. `deleteOne()` deletes one matching document, while `deleteMany()` deletes multiple matching documents.**
 
 ---
-
+<!--
 ## Q16. Can you join two collections in MongoDB? If so, how?
 
 ### সংক্ষিপ্ত ব্যাখ্যা
