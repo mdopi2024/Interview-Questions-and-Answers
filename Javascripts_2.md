@@ -16,11 +16,11 @@ A bilingual (English + বাংলা) collection of JavaScript interview quest
 
 **🇬🇧 English**
 
-Destructuring is a way I use to unpack values from an array or object into separate variables in a single line. With array destructuring, I pick values based on their position. With object destructuring, I pick values based on their property names. I use it a lot because it makes my code shorter and easier to read, especially when working with function parameters or API responses.
+Destructuring is a way to take values from an array or object and store them directly in separate variables. In array destructuring, values are taken based on their position. In object destructuring, values are taken based on their property names. It makes the code shorter and easier to read.
 
 **🇧🇩 বাংলা**
 
-Destructuring হলো এমন একটি উপায়, যেটা আমি একটা array বা object থেকে value বের করে এক লাইনে আলাদা আলাদা variable-এ রাখার জন্য ব্যবহার করি। Array destructuring-এ আমি value-গুলো তাদের position অনুযায়ী নিই। Object destructuring-এ আমি value-গুলো তাদের property নাম অনুযায়ী নিই। আমি এটি অনেক বেশি ব্যবহার করি, কারণ এটি আমার কোড ছোট এবং পড়তে সহজ করে তোলে, বিশেষ করে function parameter বা API response নিয়ে কাজ করার সময়।
+Destructuring হলো এমন একটি উপায়, যেটা ব্যবহার করে array বা object থেকে value বের করে সরাসরি আলাদা variable-এ রাখা যায়। Array destructuring-এ value position অনুযায়ী নেওয়া হয়। আর object destructuring-এ value property name অনুযায়ী নেওয়া হয়। এতে code ছোট, সহজ এবং পড়তে সুবিধা হয়।
 
 ---
 
