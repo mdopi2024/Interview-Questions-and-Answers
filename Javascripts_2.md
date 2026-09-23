@@ -206,12 +206,11 @@ JavaScript-এ this-এর value function কীভাবে call করা হ�
 
 **🇬🇧 English**
 
-Modules are what I use to split my JavaScript code into separate files, so I can organize and reuse code more easily. I use `export` to make a variable, function, or component available to other files, and `import` to bring that code into another file. I can either use named exports for multiple items, or a default export for the main thing a file provides. This keeps my codebase much cleaner and easier to maintain.
+A module is a way to split JavaScript code into separate files. It makes code easier to organize and reuse. We use export to make a function, variable, or component available to another file, and import to use that code in another file. We can use named exports for multiple items and default export for one main item.
 
 **🇧🇩 বাংলা**
 
-Module হলো এমন একটা জিনিস, যেটা আমি আমার JavaScript code-কে আলাদা আলাদা file-এ ভাগ করার জন্য ব্যবহার করি, যাতে code গুছিয়ে রাখা এবং পুনরায় ব্যবহার করা সহজ হয়। আমি `export` ব্যবহার করি কোনো variable, function, বা component-কে অন্য file-এর জন্য available করার জন্য, আর `import` ব্যবহার করি সেই code-কে আরেকটা file-এ আনার জন্য। আমি একাধিক জিনিসের জন্য named export ব্যবহার করতে পারি, অথবা একটা file-এর মূল জিনিসের জন্য default export ব্যবহার করতে পারি। এতে আমার codebase অনেক পরিষ্কার এবং maintain করা সহজ হয়ে যায়।
-
+Module হলো JavaScript code-কে আলাদা আলাদা file-এ ভাগ করে রাখার একটি উপায়। এতে code গুছিয়ে রাখা এবং reuse করা সহজ হয়। export দিয়ে কোনো function, variable বা component অন্য file-এ ব্যবহার করার জন্য পাঠানো হয়। আর import দিয়ে সেই code অন্য file-এ আনা হয়। একাধিক জিনিস export করার জন্য named export, আর একটি main জিনিস export করার জন্য default export ব্যবহার করা যায়।
 ---
 
 ## Q28. What is the difference between shallow copy and deep copy of objects?
