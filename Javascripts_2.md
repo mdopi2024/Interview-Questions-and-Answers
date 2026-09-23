@@ -173,11 +173,11 @@ call(), apply(), এবং bind() — তিনটিই function-এর ভি�
 
 **🇬🇧 English**
 
-Prototypal inheritance is how objects in JavaScript inherit properties and methods from other objects. Every object has an internal link to another object called its prototype, and this forms what's called the prototype chain. When I try to access a property or method that doesn't exist directly on an object, JavaScript looks up the prototype chain until it finds it. This is how, for example, all arrays get access to methods like `map()` or `filter()` without me defining them on every array.
+Prototypal inheritance is a system in JavaScript where one object can get properties and methods from another object. Every object has a prototype. If a property or method is not found in the object, JavaScript looks for it in its prototype. If it is not there, it continues through the prototype chain. This is why arrays can use methods like map() and filter() without defining them in every array.
 
 **🇧🇩 বাংলা**
 
-Prototypal inheritance হলো এমন একটা পদ্ধতি, যেভাবে JavaScript-এর object-গুলো অন্য object থেকে property এবং method inherit করে। প্রতিটা object-এর একটা internal link থাকে আরেকটা object-এর সাথে, যাকে prototype বলা হয়, আর এভাবেই তৈরি হয় prototype chain। যখন আমি এমন কোনো property বা method access করার চেষ্টা করি যেটা সরাসরি সেই object-এ নেই, তখন JavaScript prototype chain ধরে খুঁজতে থাকে যতক্ষণ না সেটা পায়। এই কারণেই, উদাহরণস্বরূপ, সব array-ই `map()` বা `filter()`-এর মতো method access করতে পারে, প্রতিটা array-তে আলাদাভাবে সেগুলো define না করেই।
+Prototypal inheritance হলো JavaScript-এর এমন একটি system, যেখানে একটি object অন্য object থেকে property এবং method পেতে পারে। প্রতিটি object-এর একটি prototype থাকে। কোনো property বা method object-এর মধ্যে না থাকলে JavaScript তার prototype-এ খোঁজে। সেখানেও না পেলে পরের prototype-এ খোঁজে। এভাবেই prototype chain তৈরি হয়। যেমন, array-এর মধ্যে map() বা filter() আলাদাভাবে লেখা না থাকলেও সেগুলো ব্যবহার করা যায়।
 
 ---
 
