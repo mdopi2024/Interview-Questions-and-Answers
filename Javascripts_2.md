@@ -68,11 +68,11 @@ map(), filter(), এবং reduce() — তিনটিই array নিয়ে
 
 **🇬🇧 English**
 
-Both for...in and for...of I use for looping, but they iterate over different things. `for...in` loops through the keys or indexes of an object or array. `for...of` loops directly through the values of an iterable, like an array, string, or map. I mostly use `for...of` when I want the actual values, and `for...in` when I need to work with object property names.
+for...in and for...of are both used for looping, but they work differently. for...in loops through the keys or indexes of an object or array. for...of loops directly through the values of an array, string, or other iterable. Simply, for...in → key/index and for...of → value.
 
 **🇧🇩 বাংলা**
 
-for...in এবং for...of — দুটোই আমি loop করার জন্য ব্যবহার করি, কিন্তু এরা আলাদা জিনিসের উপর iterate করে। `for...in` কোনো object বা array-এর key বা index-এর উপর দিয়ে loop করে। `for...of` সরাসরি কোনো iterable-এর value-এর উপর দিয়ে loop করে, যেমন array, string, বা map। আমি বেশিরভাগ সময় `for...of` ব্যবহার করি যখন আসল value দরকার হয়, আর `for...in` তখন ব্যবহার করি যখন object-এর property নাম নিয়ে কাজ করতে হয়।
+for...in এবং for...of — দুটোই loop করার জন্য ব্যবহার করা হয়, কিন্তু এদের কাজ আলাদা। for...in object-এর key বা array-এর index নিয়ে loop করে। আর for...of সরাসরি array, string বা অন্য iterable-এর value নিয়ে loop করে। সহজভাবে, for...in → key/index এবং for...of → value।
 
 ---
 
