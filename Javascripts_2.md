@@ -120,11 +120,11 @@ Event loop হলো এমন একটা mechanism, যেটা JavaScript a
 
 **🇬🇧 English**
 
-A Promise is an object that represents a value which may not be available yet, but will be at some point in the future. It has three states — pending, fulfilled, and rejected. I use `.then()` to handle the value when the promise succeeds, and `.catch()` to handle any error if it fails. I mostly use Promises when working with things like API calls or any operation that takes time to complete.
+A Promise is an object that represents a value that may be available later. It has three states: pending, fulfilled, and rejected. We use .then() to handle the result when the Promise succeeds, and .catch() to handle errors when it fails. Promises are commonly used for API calls and other asynchronous operations.
 
 **🇧🇩 বাংলা**
 
-Promise হলো এমন একটা object, যা এমন একটা value represent করে যেটা এখনো available নাও থাকতে পারে, কিন্তু ভবিষ্যতে একসময় পাওয়া যাবে। এর তিনটা state আছে — pending, fulfilled, এবং rejected। আমি `.then()` ব্যবহার করি যখন promise successful হয় তখন value handle করার জন্য, আর `.catch()` ব্যবহার করি কোনো error handle করার জন্য যদি সেটা fail করে। আমি Promise মূলত API call বা সময়সাপেক্ষ কোনো operation নিয়ে কাজ করার সময় ব্যবহার করি।
+Promise হলো এমন একটি object, যা এমন একটি value-এর জন্য ব্যবহার হয় যেটা এখন পাওয়া যায় না, কিন্তু পরে পাওয়া যেতে পারে। Promise-এর তিনটি state আছে — pending, fulfilled, এবং rejected। কাজ সফল হলে .then() দিয়ে result নেওয়া যায়, আর error হলে .catch() দিয়ে error handle করা যায়। Promise সাধারণত API call বা asynchronous কাজের জন্য ব্যবহার করা হয়।
 
 ---
 
@@ -138,12 +138,11 @@ Promise হলো এমন একটা object, যা এমন একটা v
 
 **🇬🇧 English**
 
-async/await is what I use as a cleaner way to work with Promises. It's essentially syntactic sugar built on top of Promises, but it lets my asynchronous code look and read almost like normal synchronous code. Instead of chaining multiple `.then()` calls, I just write `await` before a Promise, and I handle errors using a regular `try/catch` block. I find this much easier to read and debug compared to long Promise chains.
+async/await is a simple and clean way to work with Promises. async makes a function asynchronous, and await waits for a Promise to finish and gives its result. It makes asynchronous code easier to read and understand. We usually use try/catch to handle errors.
 
 **🇧🇩 বাংলা**
 
-async/await আমি Promise নিয়ে কাজ করার একটা cleaner উপায় হিসেবে ব্যবহার করি। এটা মূলত Promise-এর উপর তৈরি একটা syntactic sugar, কিন্তু এটা আমার asynchronous code-কে প্রায় normal synchronous code-এর মতো দেখতে এবং পড়তে সাহায্য করে। একাধিক `.then()` chain করার বদলে, আমি শুধু কোনো Promise-এর আগে `await` লিখি, আর error handle করার জন্য সাধারণ `try/catch` block ব্যবহার করি। এটা লম্বা Promise chain-এর তুলনায় পড়তে এবং debug করতে অনেক সহজ মনে হয় আমার কাছে।
-
+async/await হলো Promise নিয়ে কাজ করার সহজ এবং পরিষ্কার উপায়। async function-কে asynchronous করে, আর await কোনো Promise-এর result পাওয়া পর্যন্ত অপেক্ষা করে। এতে asynchronous code অনেকটা normal code-এর মতো সহজে পড়া যায়। Error handle করার জন্য সাধারণত try/catch ব্যবহার করা হয়।
 ---
 
 ## Q24. What is the difference between `call()`, `apply()`, and `bind()`?
