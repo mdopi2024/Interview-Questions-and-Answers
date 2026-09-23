@@ -223,11 +223,11 @@ Module হলো JavaScript code-কে আলাদা আলাদা file-এ
 
 **🇬🇧 English**
 
-Both shallow copy and deep copy I use to duplicate objects, but they behave differently with nested data. A shallow copy only copies the top-level properties — if the object has nested objects inside it, those nested objects are still shared between the original and the copy. A deep copy creates a fully independent copy, including all nested objects, so changing the copy never affects the original. I use shallow copy for simple, flat objects, and deep copy when I'm working with nested data that needs to stay fully separate.
+Shallow copy and deep copy are both used to copy objects, but they work differently with nested data. A shallow copy copies only the top-level properties, so nested objects are still shared with the original. A deep copy creates a fully separate copy, including nested objects. So, changing the deep copy does not affect the original object.
 
 **🇧🇩 বাংলা**
 
-Shallow copy এবং deep copy — দুটোই আমি object copy করার জন্য ব্যবহার করি, কিন্তু nested data-এর ক্ষেত্রে এদের আচরণ আলাদা। Shallow copy শুধু top-level property-গুলো copy করে — যদি object-এর ভিতরে nested object থাকে, সেগুলো original এবং copy-এর মধ্যে এখনো shared থাকে। Deep copy সম্পূর্ণভাবে independent একটা copy তৈরি করে, সব nested object সহ, ফলে copy পরিবর্তন করলে original-এ কোনো প্রভাব পড়ে না। আমি simple, flat object-এর জন্য shallow copy ব্যবহার করি, আর deep copy তখন ব্যবহার করি যখন nested data নিয়ে কাজ করি যেটা সম্পূর্ণ আলাদা থাকা দরকার।
+Shallow copy এবং deep copy — দুটোই object copy করার জন্য ব্যবহার করা হয়। Shallow copy শুধু বাইরের property-গুলো copy করে, তাই nested object থাকলে সেটা original-এর সাথে shared থাকে। আর deep copy nested object-সহ পুরো data-এর আলাদা copy তৈরি করে। তাই deep copy পরিবর্তন করলে original object পরিবর্তন হয় না।
 
 ---
 
