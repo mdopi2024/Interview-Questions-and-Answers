@@ -211,6 +211,7 @@ A module is a way to split JavaScript code into separate files. It makes code ea
 **🇧🇩 বাংলা**
 
 Module হলো JavaScript code-কে আলাদা আলাদা file-এ ভাগ করে রাখার একটি উপায়। এতে code গুছিয়ে রাখা এবং reuse করা সহজ হয়। export দিয়ে কোনো function, variable বা component অন্য file-এ ব্যবহার করার জন্য পাঠানো হয়। আর import দিয়ে সেই code অন্য file-এ আনা হয়। একাধিক জিনিস export করার জন্য named export, আর একটি main জিনিস export করার জন্য default export ব্যবহার করা যায়।
+
 ---
 
 ## Q28. What is the difference between shallow copy and deep copy of objects?
