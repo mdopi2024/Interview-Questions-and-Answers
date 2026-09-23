@@ -85,11 +85,11 @@ for...in এবং for...of — দুটোই loop করার জন্য �
 
 **🇬🇧 English**
 
-Template literals are strings I write using backticks instead of quotes, which let me insert variables directly inside `${}` and also write multi-line strings easily. Tagged templates take this a step further — I attach a function before the template literal, and that function processes the string and its values before returning the final result. I mostly use plain template literals in day-to-day code, and tagged templates only for special cases like styling libraries.
+A template literal is a string written using **backticks ()**. It allows us to put variables directly inside ${}` and easily write multi-line strings. A tagged template uses a function with a template literal, and the function can process the string and its values. Template literals are commonly used, while tagged templates are used for special cases.
 
 **🇧🇩 বাংলা**
 
-Template literal হলো এমন string, যেটা আমি quote-এর বদলে backtick দিয়ে লিখি, যার ফলে সরাসরি `${}`-এর ভিতরে variable বসাতে পারি এবং সহজে multi-line string-ও লিখতে পারি। Tagged template এটাকে আরেক ধাপ এগিয়ে নেয় — আমি template literal-এর আগে একটা function বসাই, আর সেই function final result return করার আগে string এবং তার value-গুলো process করে। আমি বেশিরভাগ ক্ষেত্রে সাধারণ template literal ব্যবহার করি, আর tagged template শুধু কিছু special case-এ ব্যবহার করি, যেমন styling library-তে।
+Template literal হলো এমন একটি string, যেটা **backtick ()** দিয়ে লেখা হয়। এতে ${}` ব্যবহার করে string-এর মধ্যে সরাসরি variable রাখা যায় এবং সহজে multi-line string লেখা যায়। Tagged template হলো template literal-এর সাথে একটি function ব্যবহার করা, যেখানে সেই function string এবং variable-এর value process করতে পারে। সাধারণ code-এ template literal বেশি ব্যবহার হয়, আর tagged template বিশেষ কিছু ক্ষেত্রে ব্যবহার করা হয়।
 
 ---
 
