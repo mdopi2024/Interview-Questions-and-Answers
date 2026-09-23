@@ -241,11 +241,11 @@ Shallow copy এবং deep copy — দুটোই object copy করার �
 
 **🇬🇧 English**
 
-WeakMap and WeakSet are similar to Map and Set, but with some important differences. They can only store objects as keys or values, not primitive values. The references they hold are weak, meaning if the object isn't used anywhere else, JavaScript can automatically garbage collect it. Unlike Map and Set, they're not iterable and don't have a size property. I mainly use them when I want to attach extra data to an object without preventing that object from being garbage collected, like storing private data or building a simple cache.
+WeakMap and WeakSet are similar to Map and Set, but they have some differences. WeakMap can only use objects as keys, and WeakSet can only store objects. Their references are weak, so if an object is no longer used anywhere else, JavaScript can remove it through garbage collection. They are not iterable and do not have a size property. They are mainly useful for storing extra data related to objects or creating a simple cache.
 
 **🇧🇩 বাংলা**
 
-WeakMap এবং WeakSet অনেকটা Map এবং Set-এর মতোই, কিন্তু কিছু গুরুত্বপূর্ণ পার্থক্য আছে। এগুলো শুধু object-কে key বা value হিসেবে রাখতে পারে, কোনো primitive value না। এদের reference weak হয়, মানে যদি সেই object আর কোথাও ব্যবহার না হয়, তাহলে JavaScript নিজে থেকেই সেটা garbage collect করতে পারে। Map এবং Set-এর মতো, এগুলো iterable না এবং এদের কোনো size property নেই। আমি এগুলো মূলত তখন ব্যবহার করি যখন কোনো object-এ extra data যোগ করতে চাই কিন্তু সেই object-কে garbage collect হওয়া থেকে আটকাতে চাই না, যেমন private data রাখা বা একটা simple cache বানানো।
+WeakMap এবং WeakSet অনেকটা Map এবং Set-এর মতো, কিন্তু এদের কিছু পার্থক্য আছে। WeakMap-এ শুধু object-কে key হিসেবে রাখা যায়, আর WeakSet-এ শুধু object রাখা যায়। এদের reference weak, তাই object-এর আর কোনো reference না থাকলে JavaScript সেটাকে garbage collection-এর জন্য সরিয়ে দিতে পারে। এগুলো loop করা যায় না এবং এদের size property নেই। এগুলো সাধারণত object-এর সাথে extra data রাখা বা simple cache-এর জন্য ব্যবহার করা হয়।
 
 ---
 
@@ -259,11 +259,11 @@ WeakMap এবং WeakSet অনেকটা Map এবং Set-এর মতো�
 
 **🇬🇧 English**
 
-Memoization is a technique I use to cache the result of an expensive function call, based on its input. The next time the function is called with the same input, instead of recalculating, it just returns the cached result. This can significantly improve performance for functions that are called repeatedly with the same arguments, like heavy calculations or recursive functions.
+Memoization is a technique where the result of a function is stored or cached. If the function is called again with the same input, it uses the cached result instead of calculating it again. This can improve performance, especially for heavy calculations or recursive functions.
 
 **🇧🇩 বাংলা**
 
-Memoization হলো এমন একটা technique, যেটা আমি কোনো সময়সাপেক্ষ function call-এর result তার input-এর ভিত্তিতে cache করার জন্য ব্যবহার করি। পরের বার একই input দিয়ে function call করলে, নতুন করে calculate না করে, এটা শুধু cached result return করে। এটা performance অনেকটা বাড়িয়ে দিতে পারে এমন function-এর ক্ষেত্রে যেগুলো বারবার একই argument দিয়ে call হয়, যেমন heavy calculation বা recursive function।
+Memoization হলো এমন একটি technique, যেখানে কোনো function-এর result cache করে রাখা হয়। পরে একই input দিয়ে function আবার call হলে, নতুন করে calculation না করে আগের result ব্যবহার করা হয়। এতে একই কাজ বারবার করার দরকার হয় না এবং performance ভালো হয়। এটি সাধারণত heavy calculation বা recursive function-এর ক্ষেত্রে কাজে লাগে।
 
 ---
 
