@@ -156,11 +156,11 @@ async/await হলো Promise নিয়ে কাজ করার সহজ �
 
 **🇬🇧 English**
 
-Call, apply, and bind I all use to control what `this` refers to inside a function, but they work a bit differently. With `call()`, I pass arguments individually and the function runs immediately. With `apply()`, I pass arguments as an array, but it also runs immediately. With `bind()`, the function does not run right away — instead, it returns a new function with `this` already set, which I can call later.
+call(), apply(), and bind() are used to set the value of this inside a function. call() and apply() run the function immediately. The difference is that call() takes arguments separately, while apply() takes arguments as an array. bind() does not run the function immediately; it returns a new function that can be called later.
 
 **🇧🇩 বাংলা**
 
-Call, apply, এবং bind — এই তিনটাই আমি কোনো function-এর ভিতরে `this` কী হবে সেটা control করার জন্য ব্যবহার করি, কিন্তু এদের কাজের ধরন একটু আলাদা। `call()`-এ আমি argument গুলো আলাদা আলাদাভাবে পাঠাই এবং function সাথে সাথেই run হয়। `apply()`-এ আমি argument গুলো একটা array হিসেবে পাঠাই, কিন্তু এটাও সাথে সাথে run হয়। `bind()`-এ function সাথে সাথে run হয় না — এর বদলে, এটা একটা নতুন function return করে যার `this` আগে থেকেই সেট করা থাকে, যেটা আমি পরে call করতে পারি।
+call(), apply(), এবং bind() — তিনটিই function-এর ভিতরে this কী হবে তা ঠিক করতে ব্যবহার করা হয়। call() এবং apply() function-কে সাথে সাথে চালায়। পার্থক্য হলো, call()-এ argument আলাদা আলাদা করে দিতে হয়, আর apply()-এ argument array হিসেবে দিতে হয়। bind() function-কে সাথে সাথে চালায় না; এটি একটি নতুন function return করে, যেটা পরে call করা যায়।
 
 ---
 
