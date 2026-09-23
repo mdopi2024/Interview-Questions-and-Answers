@@ -143,6 +143,7 @@ async/await is a simple and clean way to work with Promises. async makes a funct
 **🇧🇩 বাংলা**
 
 async/await হলো Promise নিয়ে কাজ করার সহজ এবং পরিষ্কার উপায়। async function-কে asynchronous করে, আর await কোনো Promise-এর result পাওয়া পর্যন্ত অপেক্ষা করে। এতে asynchronous code অনেকটা normal code-এর মতো সহজে পড়া যায়। Error handle করার জন্য সাধারণত try/catch ব্যবহার করা হয়।
+
 ---
 
 ## Q24. What is the difference between `call()`, `apply()`, and `bind()`?
