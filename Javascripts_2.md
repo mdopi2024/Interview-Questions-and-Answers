@@ -190,11 +190,10 @@ Prototypal inheritance হলো এমন একটা পদ্ধতি, য�
 
 **🇬🇧 English**
 
-The value of `this` in JavaScript depends entirely on how a function is called, not where it's defined. In the global context, `this` refers to the global object. Inside a regular object method, `this` refers to that object. In an arrow function, `this` doesn't get its own value — instead, it inherits `this` from the surrounding scope where it was defined. I can also control `this` explicitly using `call()`, `apply()`, or `bind()`. This is actually one of the trickier parts of JavaScript, so I try to be careful with `this` inside callbacks and event handlers.
-
+In JavaScript, the value of this depends on how the function is called. In the global context, this usually refers to the global object. Inside an object method, this refers to that object. An arrow function does not have its own this; it gets this from the surrounding scope. We can also set this using call(), apply(), or bind().
 **🇧🇩 বাংলা**
 
-JavaScript-এ `this`-এর value সম্পূর্ণভাবে নির্ভর করে function কীভাবে call করা হচ্ছে তার উপর, function কোথায় define করা হয়েছে তার উপর না। Global context-এ, `this` global object-কে refer করে। একটা সাধারণ object method-এর ভিতরে, `this` সেই object-কে refer করে। একটা arrow function-এ, `this`-এর নিজের কোনো value থাকে না — এর বদলে, এটা সেই surrounding scope থেকে `this` inherit করে যেখানে সেটা define করা হয়েছিল। আমি `call()`, `apply()`, বা `bind()` ব্যবহার করে explicitly `this` control করতে পারি। এটা আসলে JavaScript-এর একটা tricky অংশ, তাই আমি callback এবং event handler-এর ভিতরে `this` নিয়ে সাবধান থাকি।
+JavaScript-এ this-এর value function কীভাবে call করা হয়েছে তার উপর নির্ভর করে। Global context-এ this সাধারণত global object-কে refer করে। কোনো object-এর method-এর ভিতরে this সেই object-কে refer করে। আর arrow function নিজের this তৈরি করে না; এটি বাইরের scope থেকে this নেয়। এছাড়া call(), apply(), এবং bind() ব্যবহার করে this নিজের মতো করে সেট করা যায়।
 
 ---
 
