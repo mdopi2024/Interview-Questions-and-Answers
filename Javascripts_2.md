@@ -33,11 +33,11 @@ Destructuring হলো এমন একটি উপায়, যেটা ব
 
 **🇬🇧 English**
 
-Both spread and rest use the same three-dot syntax, but they do opposite things. I use the spread operator to expand elements out — for example, copying an array, merging objects, or passing array items as function arguments. I use the rest operator to do the opposite — collecting multiple values into a single array, usually in function parameters or during destructuring.
+Spread and Rest both use the three-dot (...) syntax, but they work differently. Spread expands the values of an array or object. It can be used to copy arrays, merge objects, or pass values to a function. Rest collects multiple values into a single array. It is usually used in function parameters or destructuring.
 
 **🇧🇩 বাংলা**
 
-Spread এবং rest — দুটোই একই তিন-ডট syntax ব্যবহার করে, কিন্তু এদের কাজ উল্টো। আমি spread operator ব্যবহার করি element-গুলোকে ছড়িয়ে দেওয়ার জন্য — যেমন array copy করা, object merge করা, বা array item গুলো function-এর argument হিসেবে পাঠানো। আমি rest operator ব্যবহার করি এর উল্টো কাজের জন্য — একাধিক value-কে একটা single array-তে জমা করা, সাধারণত function parameter বা destructuring-এর সময়।
+Spread এবং Rest — দুটোতেই তিনটি dot (...) ব্যবহার করা হয়, কিন্তু এদের কাজ আলাদা। Spread কোনো array বা object-এর value-গুলোকে ছড়িয়ে দেয়। এটি array copy, object merge বা function-এ values পাঠাতে ব্যবহার করা যায়। Rest একাধিক value-কে একসাথে সংগ্রহ করে একটি array-তে রাখে। এটি সাধারণত function parameter বা destructuring-এর সময় ব্যবহার করা হয়।
 
 ---
 
