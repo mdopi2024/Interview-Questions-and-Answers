@@ -51,11 +51,11 @@ Spread এবং Rest — দুটোতেই তিনটি dot (...) ব্
 
 **🇬🇧 English**
 
-All three — map, filter, and reduce — I use to work with arrays, and none of them change the original array. I use `map()` when I want to transform every item and get back a new array of the same length. I use `filter()` when I want to keep only the items that match a certain condition. I use `reduce()` when I want to combine all the items into a single value, like a total or a summary object.
+map(), filter(), and reduce() are all used to work with arrays, but they have different purposes. map() changes each item and creates a new array. filter() keeps only the items that match a condition. reduce() combines all the items into a single value, such as a total. In general, these methods do not change the original array.
 
 **🇧🇩 বাংলা**
 
-map, filter, এবং reduce — তিনটাই আমি array নিয়ে কাজ করার জন্য ব্যবহার করি, এবং এদের কোনোটাই original array পরিবর্তন করে না। আমি `map()` ব্যবহার করি যখন প্রতিটি item transform করে একই length-এর নতুন array পেতে চাই। আমি `filter()` ব্যবহার করি যখন শুধু নির্দিষ্ট condition মিলে যাওয়া item-গুলো রাখতে চাই। আমি `reduce()` ব্যবহার করি যখন সব item-কে একটা single value-তে একত্র করতে চাই, যেমন total বা কোনো summary object।
+map(), filter(), এবং reduce() — তিনটিই array নিয়ে কাজ করার জন্য ব্যবহার করা হয়, কিন্তু এদের কাজ আলাদা। map() প্রতিটি item পরিবর্তন করে নতুন array তৈরি করে। filter() একটি condition অনুযায়ী শুধু দরকারি item-গুলো রাখে। আর reduce() সব item-কে একসাথে করে একটি single value তৈরি করে, যেমন total। সাধারণভাবে, এগুলো original array পরিবর্তন করে না।
 
 ---
 
