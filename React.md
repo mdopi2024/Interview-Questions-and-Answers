@@ -128,11 +128,19 @@ useState হলো React-এর একটি Hook, যেটা functional compo
 
 **🇬🇧 English**
 
-useEffect is a React Hook that I use to perform tasks after a component renders. I commonly use it for things like fetching data from an API, adding event listeners, or updating the document title. I control when it runs using the dependency array.
+useEffect is a React Hook used to handle side effects in a component. For example, it can be used for fetching data from an API, adding event listeners, running timers, or updating the document title. The dependency array helps control when the side effect runs.
+
+Without a dependency array → useEffect runs after every render.
+With an empty array [] → useEffect runs once after the first render.
+With a dependency [value] → useEffect runs after the first render and whenever the value changes.
 
 **🇧🇩 বাংলা**
 
-useEffect হলো React-এর একটি Hook, যেটা আমি component render হওয়ার পরে কিছু কাজ করার জন্য ব্যবহার করি। আমি এটি সাধারণত API থেকে data আনা, event listener যোগ করা, অথবা document title update করার মতো কাজে ব্যবহার করি। এটি কখন চলবে সেটা আমি dependency array দিয়ে control করি।
+useEffect হলো React-এর একটি Hook, যেটা component-এর side effect handle করার জন্য ব্যবহার করা হয়। যেমন API থেকে data fetch করা, event listener যোগ করা, timer চালানো বা document title update করা। Dependency array ব্যবহার করে side effect কখন চলবে তা control করা যায়।
+
+Dependency array না দিলে → component প্রতিবার render হওয়ার পরে useEffect চলে।
+Empty array [] দিলে → component প্রথমবার render হওয়ার পরে একবার চলে।
+Dependency দিলে [value] → component প্রথমবার render হওয়ার পরে এবং সেই value পরিবর্তন হলে useEffect চলে।
 
 ---
 
