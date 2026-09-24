@@ -74,11 +74,11 @@ JSX হলো একটি syntax, যেটা React-এ JavaScript-এর ম�
 
 **🇬🇧 English**
 
-Both functional and class components I use to build UI, but they work differently. A functional component is a simple JavaScript function that returns UI. A class component is a JavaScript class that also returns UI. I mostly use functional components now because Hooks let me manage state and other React features without writing a class.
+Functional and Class Components are both used to build UI, but their structure is different. A Functional Component is a simple JavaScript function that returns UI. A Class Component is a JavaScript class that returns UI. Functional Components are mostly used now because Hooks allow us to manage state and other React features without using a class.
 
 **🇧🇩 বাংলা**
 
-Functional এবং class component — দুটোই আমি UI তৈরি করার জন্য ব্যবহার করি, কিন্তু এদের কাজ করার ধরন আলাদা। Functional component হলো একটি simple JavaScript function, যা UI return করে। Class component হলো একটি JavaScript class, যা UI return করে। আমি এখন বেশিরভাগ ক্ষেত্রে functional component ব্যবহার করি, কারণ Hooks ব্যবহার করে আমি class না লিখেই state এবং অন্যান্য React feature manage করতে পারি।
+Functional এবং Class Component — দুটোই UI তৈরি করার জন্য ব্যবহার করা হয়, কিন্তু এদের structure আলাদা। Functional Component হলো একটি simple JavaScript function, যা UI return করে। Class Component হলো একটি JavaScript class, যা UI return করে। এখন Functional Component বেশি ব্যবহার করা হয়, কারণ Hooks ব্যবহার করে class না লিখেই state এবং অন্যান্য React features manage করা যায়।
 
 ---
 
