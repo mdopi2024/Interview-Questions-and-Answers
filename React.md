@@ -171,11 +171,11 @@ Controlled এবং uncontrolled component — দুটোই আমি form h
 
 **🇬🇧 English**
 
-Props are what I use to pass data from a parent component to a child component. I pass them as attributes, and the child component receives them as an object. Props are read-only, so I never change them directly inside the child component.
+Props are used to pass data from a parent component to a child component. Props are usually passed as attributes, and the child component receives them as an object. Props are read-only, so they cannot be changed directly inside the child component.
 
 **🇧🇩 বাংলা**
 
-Props হলো এমন একটি জিনিস, যেটা আমি parent component থেকে child component-এ data পাঠানোর জন্য ব্যবহার করি। আমি এগুলো attribute হিসেবে pass করি, এবং child component সেগুলো object আকারে receive করে। Props read-only, তাই আমি কখনো child component-এর ভিতরে এগুলো সরাসরি change করি না।
+Props হলো এমন একটি উপায়, যেটা parent component থেকে child component-এ data পাঠানোর জন্য ব্যবহার করা হয়। Props সাধারণত attribute হিসেবে pass করা হয়, এবং child component এগুলো object হিসেবে receive করে। Props read-only, তাই child component-এর ভিতরে এগুলো সরাসরি change করা যায় না।
 
 ---
 
