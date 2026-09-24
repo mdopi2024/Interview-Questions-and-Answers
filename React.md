@@ -110,11 +110,11 @@ Virtual DOM হলো Real DOM-এর একটি lightweight copy, যেট�
 
 **🇬🇧 English**
 
-useState is a React Hook that I use to store and update data inside a functional component. It gives me a state value and a function to update that value. For example, I can use it to build a simple counter that increases every time I click a button.
+useState is a React Hook used to store and update data inside a functional component. It gives us a state value and a function to update that value. For example, we can use useState to create a simple counter that increases when we click a button.
 
 **🇧🇩 বাংলা**
 
-useState হলো React-এর একটি Hook, যেটা আমি functional component-এর ভিতরে data store এবং update করার জন্য ব্যবহার করি। এটি আমাকে একটি state value এবং সেই value update করার জন্য একটি function দেয়। যেমন, আমি এটি ব্যবহার করে একটি simple counter বানাতে পারি, যেটা button click করলে বাড়তে থাকে।
+useState হলো React-এর একটি Hook, যেটা functional component-এর ভিতরে data store এবং update করার জন্য ব্যবহার করা হয়। এটি একটি state value এবং সেই value update করার জন্য একটি function দেয়। যেমন, useState ব্যবহার করে একটি simple counter বানানো যায়, যেটা button click করলে বাড়ে।
 
 ---
 
