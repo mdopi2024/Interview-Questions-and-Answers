@@ -153,11 +153,11 @@ Dependency দিলে [value] → component প্রথমবার render �
 
 **🇬🇧 English**
 
-Both controlled and uncontrolled components I use for handling forms, but they manage value differently. A controlled component is a form element whose value I manage using React state. An uncontrolled component manages its own value through the DOM, usually accessed with a ref. I mostly use controlled components when I need to track or validate form data.
+Controlled and Uncontrolled Components are both used to handle forms, but they manage values differently. A Controlled Component has its value managed by React state. An Uncontrolled Component has its value managed by the DOM, and we usually access it using a ref. Controlled Components are commonly used when we need to track or validate form data.
 
 **🇧🇩 বাংলা**
 
-Controlled এবং uncontrolled component — দুটোই আমি form handle করার জন্য ব্যবহার করি, কিন্তু এদের value manage করার ধরন আলাদা। Controlled component হলো এমন একটি form element, যার value আমি React state দিয়ে manage করি। Uncontrolled component তার নিজের value DOM-এর মাধ্যমে manage করে, সাধারণত ref দিয়ে access করা হয়। আমি মূলত controlled component ব্যবহার করি যখন form-এর data track বা validate করতে হয়।
+Controlled এবং Uncontrolled Component — দুটোই form handle করার জন্য ব্যবহার করা হয়, কিন্তু এদের value manage করার পদ্ধতি আলাদা। Controlled Component-এর value React state দিয়ে manage করে। আর Uncontrolled Component-এর value DOM নিজে manage করে, এবং সাধারণত ref দিয়ে সেই value access করা হয়। Form-এর data track বা validate করতে হলে Controlled Component বেশি ব্যবহার করা হয়।
 
 ---
 
