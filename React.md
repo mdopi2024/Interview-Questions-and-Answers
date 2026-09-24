@@ -56,11 +56,11 @@ React হলো একটি JavaScript library, যেটা web application-�
 
 **🇬🇧 English**
 
-JSX is a syntax that I use in React to write HTML-like code inside JavaScript. It makes my UI code much easier to read and write. React uses JSX under the hood to understand and describe how the user interface should look.
+JSX is a syntax used in React to write HTML-like code inside JavaScript. It makes UI code simpler and cleaner. JSX helps describe what the user interface should look like.
 
 **🇧🇩 বাংলা**
 
-JSX হলো একটি syntax, যেটা আমি React-এ JavaScript-এর মধ্যে HTML-এর মতো code লেখার জন্য ব্যবহার করি। এটি আমার UI code-কে অনেক সহজে পড়া এবং লেখার উপযোগী করে তোলে। React JSX ব্যবহার করে বুঝতে পারে user interface দেখতে কেমন হওয়া উচিত।
+JSX হলো একটি syntax, যেটা React-এ JavaScript-এর মধ্যে HTML-এর মতো code লেখার জন্য ব্যবহার করা হয়। এটি UI code-কে আরও সহজ এবং পরিষ্কার করে। JSX-এর মাধ্যমে React-কে বোঝানো যায় UI দেখতে কেমন হবে।
 
 ---
 
