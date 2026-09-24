@@ -92,11 +92,11 @@ Functional এবং Class Component — দুটোই UI তৈরি কর�
 
 **🇬🇧 English**
 
-The Virtual DOM is a lightweight copy of the real DOM that React maintains. When something changes in my application, React first updates the Virtual DOM and compares it with the previous version. Then it updates only the necessary parts of the real DOM. This process helps React make UI updates much more efficient.
+The Virtual DOM is a lightweight copy of the Real DOM that React maintains. When something changes in the application, React first updates the Virtual DOM and compares it with the previous version. Then, it updates only the necessary parts of the Real DOM. This makes UI updates more efficient.
 
 **🇧🇩 বাংলা**
 
-Virtual DOM হলো Real DOM-এর একটি lightweight copy, যেটা React maintain করে। আমার application-এ কোনো কিছু change হলে, React প্রথমে Virtual DOM update করে এবং আগের version-এর সাথে compare করে। তারপর Real DOM-এর শুধুমাত্র প্রয়োজনীয় অংশ update করে। এই process React-কে অনেক বেশি efficiently UI update করতে সাহায্য করে।
+Virtual DOM হলো Real DOM-এর একটি lightweight copy, যেটা React maintain করে। Application-এ কোনো কিছু change হলে, React প্রথমে Virtual DOM update করে এবং আগের Virtual DOM-এর সাথে compare করে। এরপর Real DOM-এর শুধু প্রয়োজনীয় অংশ update করে। এতে UI update করা আরও efficient হয়।
 
 ---
 
