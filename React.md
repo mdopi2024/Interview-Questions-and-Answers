@@ -188,12 +188,11 @@ Props হলো এমন একটি উপায়, যেটা parent comp
 
 **🇬🇧 English**
 
-Prop drilling happens when I pass data through several components just to reach one component that actually needs it. It can make my code harder to manage. I avoid it by using the Context API, a state management library, or by keeping the state closer to where it's actually needed.
+Prop drilling happens when data needs to be passed through several components using props just to reach a child component that needs it. This can make the code harder to manage. We can avoid it by using the Context API, a state management library, or by keeping the state closer to where it is needed.
 
 **🇧🇩 বাংলা**
 
-Prop drilling তখন হয় যখন আমি কোনো data একটি component পর্যন্ত পৌঁছানোর জন্য মাঝখানের অনেকগুলো component-এর মধ্য দিয়ে pass করি। এতে আমার code manage করা কঠিন হয়ে যায়। আমি এটি এড়াতে Context API, কোনো state management library ব্যবহার করি, অথবা state-কে যেখানে আসলে দরকার তার কাছাকাছি রাখি।
-
+Prop drilling তখন হয়, যখন কোনো data একটি child component-এ পৌঁছানোর জন্য মাঝখানের অনেকগুলো component-এর মাধ্যমে props pass করতে হয়। এতে code manage করা কঠিন হতে পারে। এটি এড়ানোর জন্য Context API, state management library ব্যবহার করা যায়, অথবা state-কে যেখানে দরকার তার কাছাকাছি রাখা যায়।
 ---
 
 ## Q10. Explain the `useContext` Hook with an example.
