@@ -193,6 +193,7 @@ Prop drilling happens when data needs to be passed through several components us
 **🇧🇩 বাংলা**
 
 Prop drilling তখন হয়, যখন কোনো data একটি child component-এ পৌঁছানোর জন্য মাঝখানের অনেকগুলো component-এর মাধ্যমে props pass করতে হয়। এতে code manage করা কঠিন হতে পারে। এটি এড়ানোর জন্য Context API, state management library ব্যবহার করা যায়, অথবা state-কে যেখানে দরকার তার কাছাকাছি রাখা যায়।
+
 ---
 
 ## Q10. Explain the `useContext` Hook with an example.
