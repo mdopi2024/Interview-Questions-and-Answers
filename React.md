@@ -38,11 +38,11 @@ Use this table for fast revision. Cover the full answer below, look only at the 
 
 **🇬🇧 English**
 
-React is a JavaScript library that I use to build user interfaces for web applications. It lets me create reusable components and automatically update the UI whenever the data changes. This makes it much easier to build and manage interactive websites.
+React is a JavaScript library used to build user interfaces for web applications. It allows developers to create reusable components and efficiently update the UI when data changes. It solves the problem of managing complex and interactive user interfaces by making the UI easier to build, update, and maintain.
 
 **🇧🇩 বাংলা**
 
-React হলো একটি JavaScript library, যেটা আমি web application-এর user interface তৈরি করার জন্য ব্যবহার করি। এটি আমাকে reusable component তৈরি করতে এবং data change হলে automatically UI update করতে সাহায্য করে। এর ফলে interactive website তৈরি করা এবং manage করা অনেক সহজ হয়ে যায়।
+React হলো একটি JavaScript library, যেটা web application-এর user interface তৈরি করার জন্য ব্যবহার করা হয়। এটি reusable component তৈরি করতে এবং data change হলে efficiently UI update করতে সাহায্য করে। এটি complex এবং interactive UI manage করার সমস্যার সমাধান করে, ফলে UI তৈরি, update এবং maintain করা সহজ হয়।
 
 ---
 
