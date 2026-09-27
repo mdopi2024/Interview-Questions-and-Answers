@@ -293,11 +293,11 @@ Conditional rendering মানে হলো কোনো condition-এর উ�
 
 **🇬🇧 English**
 
-React.memo is what I use to prevent a component from re-rendering when its props haven't changed. It helps improve performance by avoiding unnecessary re-renders. I use it when a component renders often but its props usually stay the same.
+React.memo is a React feature that helps prevent unnecessary re-renders when a component's props have not changed. It compares the previous props with the new props. If the props are the same, the component does not need to re-render. It is useful for components that render often but usually receive the same props
 
 **🇧🇩 বাংলা**
 
-React.memo হলো এমন একটি জিনিস, যেটা আমি ব্যবহার করি যাতে কোনো component-এর props change না হলে সেটি আবার render না হয়। এটি unnecessary re-render এড়িয়ে performance improve করতে সাহায্য করে। আমি এটি তখন ব্যবহার করি যখন কোনো component বারবার render হয় কিন্তু তার props সাধারণত একই থাকে।
+React.memo হলো React-এর একটি feature, যেটা props change না হলে component-এর unnecessary re-render কমাতে সাহায্য করে। এটি component-এর আগের props-এর সাথে নতুন props compare করে। Props একই থাকলে component আবার render করার দরকার হয় না। সাধারণত এমন component-এর জন্য React.memo ব্যবহার করা হয়, যেটা বারবার render হয় কিন্তু props সাধারণত একই থাকে।
 
 **Quick recall:**
 - **React.memo** → props change না হলে unnecessary re-render এড়াতে সাহায্য করে
