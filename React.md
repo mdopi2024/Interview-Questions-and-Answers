@@ -239,11 +239,11 @@ useRef হলো React-এর একটি Hook, যেটা এমন এক�
 
 **🇬🇧 English**
 
-Keys are unique values that I give to each element when I render a list in React. They help React identify which items have changed, been added, or been removed. This helps React update the list correctly and efficiently, instead of re-rendering everything.
+Keys are unique values given to each item when rendering a list in React. They help React identify each item separately. When an item is changed, added, or removed, React can understand which item needs to be updated. This helps React update only the necessary parts of the list instead of updating the whole list unnecessarily.
 
 **🇧🇩 বাংলা**
 
-Keys হলো unique value, যেটা আমি React-এ list render করার সময় প্রতিটি element-কে দিই। এগুলো React-কে বুঝতে সাহায্য করে কোন item change হয়েছে, কোনটা add হয়েছে বা কোনটা remove হয়েছে। এতে React পুরো list আবার render না করে সঠিকভাবে এবং efficiently update করতে পারে।
+Keys হলো একটি unique value, যেটা React-এ list render করার সময় প্রতিটি item-কে দেওয়া হয়। এটি React-কে প্রতিটি item আলাদাভাবে identify করতে সাহায্য করে। যখন list-এর কোনো item change, add বা remove হয়, তখন React বুঝতে পারে কোন item update করতে হবে। এতে React অপ্রয়োজনীয়ভাবে পুরো list update না করে দরকারি অংশগুলো efficiently update করতে পারে।
 
 ---
 
