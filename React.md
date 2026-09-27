@@ -205,11 +205,11 @@ Prop drilling তখন হয়, যখন কোনো data একটি chil
 
 **🇬🇧 English**
 
-useContext is a React Hook used to share data between multiple components without passing props through every level. It helps avoid or reduce prop drilling. It is useful for sharing common data like user information, theme settings, or language preferences across many components.
+useRef is a React Hook used to store a value without causing a re-render when the value changes. It is also used to access DOM elements directly. For example, we can use useRef to automatically focus an input field.
 
 **🇧🇩 বাংলা**
 
-useContext হলো React-এর একটি Hook, যেটা অনেকগুলো component-এর মধ্যে data share করার জন্য ব্যবহার করা হয়, যাতে প্রতিটি level-এর মধ্যে props pass করতে না হয়। এটি prop drilling এড়াতে বা কমাতে সাহায্য করে। এটি user information, theme settings, বা language preference-এর মতো common data অনেক component-এর মধ্যে share করার জন্য useful।
+useRef হলো React-এর একটি Hook, যেটা এমন একটি value store করার জন্য ব্যবহার করা হয়, যেটা change হলে component আবার render হয় না। এটি DOM element সরাসরি access করার জন্যও ব্যবহার করা হয়। যেমন, useRef ব্যবহার করে একটি input field automatically focus করা যায়।
 
 ---
 
