@@ -276,11 +276,11 @@ State এবং Props — দুটোই React-এ data manage করার জ
 
 **🇬🇧 English**
 
-Conditional rendering means I show different UI based on a condition. In React, I usually use if-else statements, the ternary operator, or the `&&` operator to render elements conditionally, depending on how simple or complex the condition is.
+Conditional rendering means showing different UI based on a condition. In React, we commonly use if-else, the ternary operator (? :), or the && operator to render UI conditionally. For simple conditions, we can use the ternary or &&, while for complex conditions, we can use if-else.
 
 **🇧🇩 বাংলা**
 
-Conditional rendering মানে হলো আমি কোনো condition-এর উপর ভিত্তি করে different UI দেখাই। React-এ আমি সাধারণত if-else statement, ternary operator, অথবা `&&` operator ব্যবহার করি condition অনুযায়ী element render করার জন্য, condition কতটা simple বা complex তার উপর নির্ভর করে।
+Conditional rendering মানে হলো কোনো condition-এর উপর ভিত্তি করে different UI দেখানো। React-এ condition অনুযায়ী UI দেখানোর জন্য সাধারণত if-else, ternary operator (? :), অথবা && operator ব্যবহার করা হয়। Condition simple হলে ternary বা && ব্যবহার করা যায়, আর complex condition হলে if-else ব্যবহার করা যায়।
 
 ---
 
