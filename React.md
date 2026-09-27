@@ -256,11 +256,11 @@ Keys হলো একটি unique value, যেটা React-এ list render ক
 
 **🇬🇧 English**
 
-Both state and props I use to handle data in React, but they serve different purposes. Props are used to pass data from a parent component to a child component, and they are read-only. State is used to store and manage data inside a component itself, and I can update it using a function like `setState` or a `useState` updater.
+State and Props are both used to manage data in React, but they have different purposes. Props are used to pass data from a parent component to a child component, and they are read-only. State is used to store and manage data inside a component. When the state changes, the component can re-render. We use the useState update function to update state. In class components, we use setState().
 
 **🇧🇩 বাংলা**
 
-State এবং props — দুটোই আমি React-এ data handle করার জন্য ব্যবহার করি, কিন্তু এদের purpose আলাদা। Props ব্যবহার করা হয় parent component থেকে child component-এ data পাঠানোর জন্য, এবং এগুলো read-only। State ব্যবহার করা হয় component-এর নিজের ভিতরের data store এবং manage করার জন্য, এবং আমি এটি `setState` বা `useState`-এর updater function দিয়ে পরিবর্তন করতে পারি।
+State এবং Props — দুটোই React-এ data manage করার জন্য ব্যবহার করা হয়, কিন্তু এদের কাজ আলাদা। Props parent component থেকে child component-এ data পাঠানোর জন্য ব্যবহার করা হয় এবং এগুলো read-only। অন্যদিকে, State component-এর নিজের data store এবং manage করার জন্য ব্যবহার করা হয়। State-এর value পরিবর্তন হলে component re-render হতে পারে। State update করার জন্য useState-এর update function ব্যবহার করা হয়। Class component-এ setState() ব্যবহার করা হয়।
 
 **Quick recall:**
 - **Props** → Parent থেকে Child-এ data আসে
