@@ -68,11 +68,15 @@ useCallback হলো React-এর একটি hook, যেটা আমি এ
 
 **🇬🇧 English**
 
-React Router is a library that I use to manage navigation and routing in React applications. I create routes for different components and map them to different URLs. For example, I can create routes like `/`, `/about`, and `/contact` and render different components for each route.
+React Router is a React library used to manage navigation and client-side routing in an application. It allows us to create a separate route for each URL and show a specific component based on that route.
+
+To set up client-side routing, first we install React Router. Then we use BrowserRouter, Routes, and Route to create routes for different URLs. For example, we can create routes like /, /about, and /contact and show a specific component for each route. This allows us to navigate between pages without reloading the whole page.
 
 **🇧🇩 বাংলা**
 
-React Router হলো একটি library, যেটা আমি React application-এ navigation এবং routing manage করার জন্য ব্যবহার করি। আমি বিভিন্ন component-এর জন্য route তৈরি করি এবং সেগুলোকে বিভিন্ন URL-এর সাথে map করি। যেমন, আমি `/`, `/about`, এবং `/contact`-এর মতো route তৈরি করতে পারি এবং প্রতিটি route-এর জন্য আলাদা component render করতে পারি।
+React Router হলো React-এর একটি library, যেটা application-এর navigation এবং client-side routing manage করার জন্য ব্যবহার করা হয়। এতে প্রতিটি URL-এর জন্য আলাদা route তৈরি করে, সেই route অনুযায়ী নির্দিষ্ট component দেখানো যায়।
+
+Client-side routing সেট up করার জন্য প্রথমে React Router install করতে হয়। এরপর BrowserRouter, Routes, এবং Route ব্যবহার করে বিভিন্ন URL-এর জন্য route তৈরি করা হয়। যেমন /, /about, এবং /contact route তৈরি করে প্রতিটির জন্য নির্দিষ্ট component দেখানো যায়। এর ফলে পুরো page reload না করেই এক route থেকে অন্য route-এ যাওয়া যায়।
 
 ---
 
